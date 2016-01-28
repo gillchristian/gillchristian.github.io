@@ -4,7 +4,7 @@ angular.module('personalApp.controllers')
       		$scope.projects = [
             {
               name: 'Front-end Developer',
-              description: 'Currently working at 4r Soluciones. Aug \'16 - today.',
+              description: 'Currently working at 4r Soluciones. Aug \'15 - today.',
               url: 'http://4rsoluciones.com/',
               img: 'assets/img/portfolio/4rsoluciones.jpg',
               tags: ['AngularJS', 'WordPress','php', 'html5', 'ccs3']
