@@ -58,6 +58,10 @@ body {
 	margin: 10px;
 }
 
+.home-text {
+	font-size: 0.85em;
+}
+
 /* ########################################################################################################## */
 /* FOOTER */
 
@@ -72,13 +76,13 @@ body {
 	text-decoration: none;
 }
 
-.list>li {
+.list > li {
 	display: inline;
 	margin: 5px;
     padding: 5px;
 }
 
-.list>ul {
+.list > ul {
 	list-style-type: none;
 	padding-top: 10px;
 	margin-top: 10px;
