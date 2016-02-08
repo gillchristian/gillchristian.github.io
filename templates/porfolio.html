@@ -18,6 +18,8 @@
                         <br>
                         <span class="grey-text text-darken-4">{{project.description}}</span>
                         <br>
+                        <span class="grey-text text-darken-4">{{project.time}}</span>
+                        <br>
                         <span ng-repeat="tag in project.tags" class="tag">#{{tag}} | </span>                        
                     </div>
                 </div>
@@ -40,7 +42,7 @@
                                 alt="{{personal.name}}">
                         </a>
                         <br>
-                        <span class="project-title grey-text text-darken-4">{{personal.name}}</span>
+                        <span class="project-title grey-text text-darken-4"><b>{{personal.name}}</b></span>
                         <br>
                         <span class="grey-text text-darken-4">{{personal.description}}</span>
                         <br>

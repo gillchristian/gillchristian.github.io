@@ -3,25 +3,28 @@ angular.module('personalApp.controllers')
     function($scope) {
       $scope.projects = [
         {
-          name: 'Front-end Developer',
-          description: 'Currently working at 4r Soluciones. Aug \'15 - today.',
+          name: '4r Soluciones',
+          description: 'Front-end developer. Custom WordPress themes development, AngularJS webapps.',
           url: 'http://4rsoluciones.com/',
           img: 'assets/img/portfolio/4rsoluciones.jpg',
-          tags: ['AngularJS', 'WordPress','php', 'html5', 'ccs3']
+          tags: ['AngularJS', 'WordPress','php', 'html5', 'ccs3'],
+          time: 'Aug 2015 - present'
         },
         {
-          name: 'Poder Judicial, Entre Rios',
-          description: 'WordPress plugins and theme edition, front end development.',
-          url: 'http://www.jusentrerios.gov.ar/',
-          img: 'assets/img/portfolio/jusentrerios.jpg',
-          tags: ['WordPress','php', 'html5', 'ccs3', 'jQuery']
+          name: 'Grandi y Asociados',
+          description: 'Front-end developer. WordPress plugins and theme edition, front end development.',
+          url: 'http://www.grandiyasociados.net/',
+          img: 'assets/img/portfolio/grandi.jpg',
+          tags: ['WordPress','php', 'html5', 'ccs3', 'jQuery'],
+          time: 'April - August 2015'
         },
         {
-          name: 'ADRA Central Asia Website',
-          description: 'Creation of the website, using Wordpress template.',
+          name: 'ADRA Central Asia',
+          description: 'WordPress website development and management.',
           url: 'http://adra-central.asia/?lang=en',
           img: 'assets/img/portfolio/ADRAwebsite.jpg',
-          tags: ['WordPress','php', 'html5', 'ccs3']
+          tags: ['WordPress','php', 'html5', 'ccs3'],
+          time: 'March 2014 - January 2015'
         },
       ];
       
