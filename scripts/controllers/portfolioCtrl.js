@@ -30,9 +30,9 @@ angular.module('personalApp.controllers')
       
       $scope.personals = [
         {
-          name: 'jcorddion',
+          name: 'bandoneon',
           description: 'jQuery acorddion plugin.',
-          url: 'http://gillchristian.github.io/jcorddion/',
+          url: 'http://gillchristian.github.io/bandoneon/',
           img: 'assets/img/portfolio/jcorddion.jpg',
           tags: ['jQuery','plugin', 'accordion', 'bower-package']
         },
