@@ -186,8 +186,8 @@ main {
 	opacity: .6;
 	-webkit-transform: scale(1.1,1.1);
 	transform: scale(1.1,1.1);
-	-webkit-transition: all 3s;
-	transition: all 3s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
 .img-container img {	
