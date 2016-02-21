@@ -1,99 +1,114 @@
-<!doctype html>
-<html class="no-js">
-
-<head>
-   <meta charset="UTF-8" />
-    <meta 
-          name="viewport" 
-          content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
-    <meta 
-          name="description" 
-          content="Christian Gill" />
-    <meta 
-          name="keywords" 
-          content="web development, developer, javascript, html, bootstrap, angular, learning" />
-    <meta 
-          name="author" 
-          content="Christian Gill" />
-
-   <title>Christian Gill</title>
-    
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Christian Gill</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Christian Gill" />
+    <meta name="keywords" content="web-developer, developer, javascript, html, angular, react, node" />
+    <meta name="author" content="gillchristian" />
     <link rel="shortcut icon" href="favicon.ico">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
 
-   <!-- Materialize -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-   <!-- FONTS -->
-    <!-- Font Awesome -->
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Inconsolata -->
-   <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-   <!-- custom css -->
-   <link rel="stylesheet" type="text/css" href="css/style.css" />
-   
-</head>
+		<!-- Header -->
+			<header id="header">
+				<a href="http://github.com/gillchristian/" class="image avatar" target="_blank"><img src="images/avatar.jpg" alt="" /></a>
+				<h1><strong>Christian Gill</strong><br />
+				web developer</h1>
+			</header>
 
-<body ng-app="personalApp">
-  <header>
-    <div class="navbar-fixed">
-      <nav ng-controller="HeaderController" class="navbar brown darken-1 z-depth-1"><!-- NAV BAR -->
-        <div class="nav-wrapper">
-          <div class="container">
-          <a href="" class="brand-logo yellow-text text-lighten-2">Christian Gill</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu yellow-text text-lighten-4"></i></a>
-            <ul class="right hide-on-med-and-down">
-              <li ng-class="{active: isActive('home')}"><a href="#/" class="yellow-text text-lighten-4">Home</a></li>
-              <li ng-class="{active: isActive('portfolio')}"><a href="#/porfolio" class="yellow-text text-lighten-4">Portfolio</a></li>
-            </ul>
-            <ul class="side-nav brown lighten-1" id="mobile-demo">
-              <li ng-class="{active: isActive('home')}"><a href="#/" class="brown-text text-darken-4 sideMenu" >Home</a></li>
-              <li ng-class="{active: isActive('portfolio')}"><a href="#/porfolio" class="brown-text text-darken-4 sideMenu" >Portfolio</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav><!-- .NAV BAR -->
-    </div>
-  </header>
+		<!-- Main -->
+			<main id="main">
 
-  </header>
+				<!-- Me -->
+					<section id="me">
+						<header class="major">
+							<h2>Web developer</h2>
+						</header>
+						<p>
+							An Argentinian guy who believes in God, loves his wife and like to learn new things.
+						</p>
 
-  <main >
-    <div ui-view></div><!-- DINAMIC LOADED VIEW --><!-- CONTENT -->
-  </main>
+						<p>
+							What I like the most is web development, currently I am learning and working with a many cool things. I am really passionate about JavaScript (ES6 of course), specially <b><em>NodeJS</em></b> as well as <b><em>React</em></b> and <b><em>Angular</em></b> ecosystems.
+						</p>
+						<p>
+							I work with a bunch of other things too: <b><em>Bootstrap & Foundation</em></b>, <b><em>Gulp & Webpack</em></b>, <b><em>SASS & PostCSS</em></b>, <b><em>PHP</em></b>, <b><em>WordPress</em></b>, <b><em>MySQL</em></b>, <b><em>Python & Django</em></b>, and the list goes on.
+						</p>
+							<ul class="actions">
+								<li><a href="assets/portfolio/CV_en.pdf" download="Christian-Gill-CV" class="button icon fa-download">My CV</a></li>
+							</ul>
+						<!--
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+						-->
+					</section>
 
-  <footer class="page-footer brown darken-1">
-    <div class="footer-copyright">
-      <div class="container">
-        <a class="social-icon right" target="_blank" href="mailto:gillchristiang@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
-        <a class="social-icon right" target="_blank" href="http://twitter.com/gillchristian"><i class="fa fa-twitter-square fa-2x"></i></a>
-        <a class="social-icon right" target="_blank" href="http://ar.linkedin.com/in/gillchristian"><i class="fa fa-linkedin-square fa-2x"></i></a>
-        <a class="social-icon right" target="_blank" href="http://github.com/gillchristian"><i class="fa fa-github-square fa-2x"></i></a>
-      </div>
-    </div>
-  </footer>
+				<!-- Work & Experience -->
+				<section id="work-and-experience">
+					<h2>Work & Experience</h2>
+					<ul class="alt">
+						<li>
+							<h4>Entrepenur | <a href="http://equis.com.ar">Equis</a></h4>
+							<span>Web and mobile development.</span><br />
+							<span><em>Dec 2015 - present</em></span>
+						</li>
+						<li>
+							<h4>Front-end developer | <a href="http://4rsoluciones.com" target="_blank">4r Soluciones</a></h4>
+							<span> Custom WordPress themes development & AngularJS webapps.</span><br />
+							<span><em>Aug 2015 - present</em></span>
+						</li>
+						<li>
+							<h4>WordPress Developer | <a href="http://grandiyasociados.net">Grandi y Asociados</a></h4>
+							<span>WordPress plugins and themes edition, front end development.</span><br />
+							<span><em>April - August 2015</em></span>
+						</li>
+						<li>
+							<h4>WordPress Developer & PR | <a href="http://adra-central.asia/?lang=en">ADRA Central Asia</a></h4>
+							<span>WordPress website development and management, social public relations.</span><br />
+							<span><em>March 2014 - January 2015</em></span>
+						</li>
+					</ul>
+				</section>
 
-  <!-- CONTENT -->
+				<!-- Contact -->
+					<section id="contact">
+						<h2>Get In Touch</h2>
+						<p>Reach me at twitter <a href="http://twitter.com/home?status=hey%20@gillchristian%20bla%20bla%20bla&" target="_blank">@gillchristian</a> or by <a href="mailto:gillchristian@gmail.com" target="_blank">email</a>.</p>
+					</section>
 
-   <!-- FRAMEWORKS -->
+			</main>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://github.com/gillchristian" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="http://twitter.com/gillchristian" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/in/gillchristian" target="_blank" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:gillchristiang@gmail.com" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; gillchristian</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
-   <!-- jQUERY -->
-   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-   <script src="scripts/others/sidebar.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-   <!-- Materialize -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-   <script src="resources/js/script.js"></script>
-
-   <!-- ANGULARJS -->
-   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-
-   <!-- UI-Router -->
-   <script src="resources/js/angular-ui-router.js"></script>
-
-   <!-- APP SCRIPTS-->
-   <script src="scripts/app.js"></script>
-   <script src="scripts/controllers/headerCtrl.js"></script>
-   <script src="scripts/controllers/portfolioCtrl.js"></script>
-
-</body>
-
+	</body>
 </html>
