@@ -1,0 +1,16 @@
+{
+  "name": "Christian Gill",
+  "short_name": "CG",
+  "description": "Hi I'm a web developer!",
+  "start_url": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#787878",
+  "theme_color": "#49bf9d"
+}
