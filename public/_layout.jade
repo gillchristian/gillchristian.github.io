@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    link(rel='manifest', href='manifest.json')
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Christian Gill')
+    meta(name='keywords', content='web-developer, developer, javascript, html, angular, react, node')
+    meta(name='author', content='gillchristian')
+    link(rel='shortcut icon', href='favicon.ico')
+    // required in all modes
+    link(rel='stylesheet', href='assets/style/libs/hack/dist/hack.css')
+    link(rel='stylesheet', href='assets/style/style.css')
+  body.hack
+    include ./_header
+    //- this is the content section
+    main.container
+      != yield
+      include ./_footer

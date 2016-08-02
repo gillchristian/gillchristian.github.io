@@ -1,0 +1,22 @@
+// navbar bar
+header {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  .items {
+    display: flex;
+    a {
+      margin: 5px 10px;
+      border-bottom: none;
+    }
+  }
+  .blog-name {
+    font-size: 1.5em;
+  }
+}

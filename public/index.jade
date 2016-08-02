@@ -1,25 +1,15 @@
-doctype html
-html
-  head
-    link(rel='manifest', href='manifest.json')
-    title Christian Gill
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='Christian Gill')
-    meta(name='keywords', content='web-developer, developer, javascript, html, angular, react, node')
-    meta(name='author', content='gillchristian')
-    link(rel='shortcut icon', href='favicon.ico')
-    // required in all modes
-    link(rel='stylesheet', href='assets/style/libs/hack/dist/hack.css')
-    link(rel='stylesheet', href='assets/style/style.css')
-  body.hack
-    .menu
-      a.menu-item.active
-        | home
-        .pull-right »
-      a.menu-item
-        | blog
-        .pull-right »
-      a.menu-item
-        | my projects
-        .pull-right »
+h1
+  | web-developer
+p
+  | I'm an Argentinian guy who believes in God, <3 his wife and like to learn new things. Oh, also a developer! 
+p  
+  | What I like the most is web development, 
+  | currently I am learning and working with a bunch of cool stuff. 
+  | I am really passionate about JavaScript, specially NodeJS, React and Angular ecosystems.
+- tags = ["Bootstrap & Foundation", "Gulp & Webpack", "SASS & PostCSS", "Vue.js", "RxJS", "MongoDB"]
+p
+  | I work with a bunch of other interesting things too: 
+  - each tag in tags
+    span.lang-tag #{tag}
+    span #{', '}
+  | and the list goes on.
