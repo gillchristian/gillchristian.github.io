@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "harp:dev": "harp server --port 9000",
+    "start": "sudo docker-compose up",
     "postinstall": "npm run move:assets",
     "move:assets": "rm -fr public/assets/style/libs/hack && cp -r node_modules/hack public/assets/style/libs"
   },
