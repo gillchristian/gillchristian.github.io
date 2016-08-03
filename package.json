@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "harp:dev": "harp server --port 9000",
-    "postinstall": "npm run move-assets",
-    "move:assets": "cp -r node_modules/hack public/assets/style/generic"
+    "postinstall": "npm run move:assets",
+    "move:assets": "rm -fr public/assets/style/libs/hack && cp -r node_modules/hack public/assets/style/libs"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
   "dependencies": {
-    "hack": "^0.5.2",
-    "harp": "^0.20.3"
+    "hack": "^0.5.2"
   }
 }
