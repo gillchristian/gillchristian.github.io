@@ -1,6 +1,20 @@
 {
   "globals": {
-    "title": "gillchristian",
-    "description": "a web dev blog"
+    "site": {
+      "title": "gillchristian",
+      "description": "a web dev blog"
+    },
+    "social": {
+      "twitter": {
+        "username": "@gillchristian",
+        "url": "http://twitter.com/gillchristian",
+        "class": "fa-twitter"
+      },
+      "github": {
+        "username": "gillchristian",
+        "url": "http://github.com/gillchristian",
+        "class": "fa-github"
+      }
+    }
   }
 }
