@@ -1,0 +1,6 @@
+h1 title
+p this is my blog
+
+for article, slug in public.blog._data
+  a(href="/blog/#{ slug }")
+    h2= article.title
