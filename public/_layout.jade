@@ -1,23 +1,9 @@
-doctype html
-html
-  head
-    link(rel='manifest', href='manifest.json')
-    title #{title ? title + ' | ' + site.title : stie.title}
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='Christian Gill')
-    meta(name='keywords', content='web-developer, developer, javascript, html, angular, react, node')
-    meta(name='author', content='gillchristian')
-    link(rel='shortcut icon', href='favicon.ico')
-    //- CSS & Fonts
-    link(rel='stylesheet', href='assets/style/libs/hack/dist/hack.css')
-    link(rel='stylesheet', href='assets/style/style.css')
-    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
-  body.hack
-    header
-      include ./_header
-    main
-      .container
-        != yield
-    footer
-      include ./_footer
+include ./_head
+body.hack
+  header
+    include ./_header
+  main
+    .container
+      != yield
+  footer
+    include ./_footer
