@@ -1,0 +1,19 @@
+.not-found {
+  position: absolute;
+  width: 275px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.not-found > span {
+  display: block;
+}
+
+@media screen and (max-width: 290px) {
+  .code-area {
+    font-size: 95%;
+    margin: 0;
+    padding: 0;
+  }
+}
