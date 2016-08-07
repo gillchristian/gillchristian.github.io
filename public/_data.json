@@ -1,0 +1,80 @@
+{
+  "projects": [
+    {
+      "title": "quark",
+      "tags": ["react", "webpack", "express", "HMR", "universal"],
+      "url": "https://github.com/gillchristian/quark",
+      "description": "[WIP] Universal React starter app."
+    },
+    {
+      "title": "gh-pages",
+      "tags": ["react", "webpack", "express", "github-api"],
+      "url": "http://gillchristian.github.io/gh-pages",
+      "repo": "https://github.com/gillchristian/gh-pages",
+      "description": "Find the repos with gh-pages of Github user."
+    },
+    {
+      "title": "itcss starter",
+      "tags": ["css", "architecture", "itcss"],
+      "url": "https://github.com/gillchristian/itcss-starter",
+      "description": "Dead simple directories & files structure to organize CSS in a project."
+    },
+    {
+      "title": "bandoneon",
+      "tags": ["jquery", "plugin"],
+      "url": "http://gillchristian.github.io/bandoneon",
+      "repo": "https://github.com/gillchristian/bandoneon",
+      "description": "Simple jQuery acorddion plugin."
+    },
+    {
+      "title": "cpt",
+      "tags": ["php", "wordpress", "custom-post-types"],
+      "url": "https://github.com/gillchristian/CPT",
+      "description": "Helper class to create Custom Pots Types in WordPress."
+    }
+  ],
+  "talks": [
+    {
+      "title": "JavaScript ES6",
+      "event": "JavaScript Meetup",
+      "eventUrl": "http://www.meetup.com/js-Litoral/events/230947251/",
+      "description": "EcmaSctip 6 features showcase & usage with Babel.",
+      "date": "May 2016",
+      "links": [
+        {
+          "url": "http://slides.com/christiangill/deck",
+          "label": "Slides"
+        },
+        {
+          "url": "https://github.com/JavascriptLitoral/es6-features",
+          "label": "Repo"
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Angular",
+      "event": "JavaScript Meetup",
+      "eventUrl": "http://www.meetup.com/js-Litoral/events/229145986/",
+      "description": "Introduction to Angular framework, plus some live examples.",
+      "date": "March 2016",
+      "links": [
+        {
+          "url": "http://slides.com/christiangill/angular-js-intro",
+          "label": "Slides"
+        },
+        {
+          "url": "https://youtu.be/1qWlIZIar-U?t=5m00s",
+          "label": "Stream"
+        },
+        {
+          "url": "http://gillchristian.xyz/font-awesome-store/",
+          "label": "Demo"
+        },
+        {
+          "url": "https://github.com/gillchristian/font-awesome-store",
+          "label": "Repo"
+        }
+      ]
+    }
+  ]
+}

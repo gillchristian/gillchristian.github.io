@@ -1,0 +1,5 @@
+h1 my blog
+- each article, slug in public.articles._data
+  h2
+    a(href="/articles/#{ slug }")= article.title
+  p= article.excerpt

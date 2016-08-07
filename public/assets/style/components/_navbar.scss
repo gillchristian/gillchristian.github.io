@@ -7,14 +7,25 @@ header {
   background: white;
 }
 .navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 5px;
+  .blog-name {
+    margin: 10px 0;
+  }
   .items {
     display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
     a {
-      margin: 5px 10px;
+      margin: 5px 10px 5px 0;
       border-bottom: none;
+      &.active {
+        background-color: $links;
+        color: white;
+      }
     }
   }
   .blog-name {

@@ -1,0 +1,30 @@
+h1 Meetups, Talks & Conferences
+- each talk in public._data.talks
+  .media
+    .media-body
+      .media-heading
+        | #{talk.title + ' | '}
+        a(href="#{talk.eventUrl}", target="_blank", rel="noopener")= talk.event
+      .media-content
+        | #{talk.description}
+        br
+        i.fa.fa-clock-o
+        | #{' ' + talk.date}
+        br
+        - each link, index in talk.links
+          a(href="#{link.url}", target="_blank", rel="noopener")= link.label
+          if index < (talk.links.length - 1)
+            | #{' | '}
+
+h1 Projects
+- each project in public._data.projects
+  .media
+    .media-body
+      .media-heading= project.title.toUpperCase()
+      .media-content
+        | #{project.description}
+        br
+        a(href="#{project.url}", target="_blank", rel="noopener") view
+        if project.repo 
+          | #{' | '}
+          a(href="#{project.repo}", target="_blank", rel="noopener") code
