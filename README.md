@@ -1,9 +1,10 @@
 # [gillchristian.github.io](http://gillchristian.github.io)
 
-To run clone the repo, `cd` into the directory and:
+To run in development mode clone the repo, `cd` into the directory and:
 ```
 npm install
-npm start
+npm run dev
+
 ```
 _**NOTE**_: it runs on a docker container using `docker-compose` so you'll need to have it installed.
 
