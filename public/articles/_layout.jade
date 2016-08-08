@@ -14,6 +14,7 @@ body.hack
           | #{' ' + date}
         .article
           != yield
+          include _prev-next
   footer
     .container
       include ../_footer

@@ -1,0 +1,15 @@
+// https://github.com/sintaxi/harp/issues/189#issuecomment-31903015
+- var articles = []
+for article, slug in public.articles._data
+  - article.slug = slug
+  - articles.push(public.articles._data[slug])
+
+each article, i in articles
+  if article.slug == current.source
+      - prev = articles[i - 1]
+      - next = articles[i + 1]
+      ul
+      if prev
+        a(href="#{ prev.slug }") &larr; #{ prev.title }
+      if next
+        a.pull-right(href="#{ next.slug }") #{ next.title } &rarr;
