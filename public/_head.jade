@@ -2,7 +2,7 @@ doctype html
 html
   head
     link(rel='manifest', href='manifest.json')
-    title #{ title ? title + ' | ' + site.title : stie.title }
+    title #{ title && title !== site.title ? title + ' » ' + site.title : site.title }
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='Christian Gill')
