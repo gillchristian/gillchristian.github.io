@@ -1,0 +1,19 @@
+include ../_head
+body.hack
+  header
+    include ../_header
+  //- this is the content section
+  main
+    .container
+      if current.source === 'index'
+        != yield
+      else
+        h1= title
+        p
+          i.fa.fa-clock-o
+          | #{' ' + date}
+        .article
+          != yield
+  footer
+    .container
+      include ../_footer

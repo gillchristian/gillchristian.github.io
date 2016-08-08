@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  web:
+    build: ./
+    command: npm run harp:dev
+    volumes:
+      - ./:/app
+    ports:
+      - "9000:9000"

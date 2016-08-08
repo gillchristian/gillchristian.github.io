@@ -1,0 +1,35 @@
+{
+  "name": "gillchristian.github.io",
+  "version": "0.1.0",
+  "description": "gillchristian personal site",
+  "main": "index.js",
+  "scripts": {
+    "harp:dev": "harp server --port 9000",
+    "harp:prod": "NODE_ENV=production harp server --port 9000",
+    "start": "sudo docker-compose -f docker-compose.prod.yml up",
+    "dev": "sudo docker-compose up",
+    "prestart": "npm run move:assets",
+    "predev": "npm run move:assets",
+    "move:assets": "rm -fr public/assets/style/libs/hack && cp -r node_modules/hack public/assets/style/libs/hack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillchristian/gillchristian.github.io.git"
+  },
+  "keywords": [
+    "personal-site",
+    "developer",
+    "blog",
+    "js",
+    "full-stack"
+  ],
+  "author": "gillchristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gillchristian/gillchristian.github.io/issues"
+  },
+  "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
+  "dependencies": {
+    "hack": "^0.5.2"
+  }
+}

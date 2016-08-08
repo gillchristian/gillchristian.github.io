@@ -1,0 +1,10 @@
+.project-tag {
+  margin-right: 8px;
+  padding: 3px;
+  border: 1px solid blue;
+  &:hover {
+    border-color: black;
+    color: white;
+    background-color: blue;
+  }
+}

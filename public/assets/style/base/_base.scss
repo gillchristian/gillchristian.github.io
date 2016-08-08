@@ -1,0 +1,26 @@
+/**
+ * Base styles
+ *
+ * Element styles, no classes nor IDs.
+ * Base typography & raw elements
+ *
+ * ---------------------
+ * |--- Some File
+ * ---------------------
+ */
+
+/* --- some file --- */
+//@import 'some-file';
+
+* {
+  box-sizing: border-box;;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  main {
+    flex: 1;
+  }
+}

@@ -1,0 +1,20 @@
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2px 12px;
+}
+
+.social-link {
+  color: #ccc;
+  background-color: white;
+  border: none;
+  margin-right: 10px;
+  &:hover {
+    color: black;
+    background-color: white;
+    border: none;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "globals": {
+    "title": "gillchristian",
+    "site": {
+      "title": "gillchristian",
+      "description": "a web dev blog",
+      "social": {
+        "twitter": {
+          "url": "http://twitter.com/gillchristian",
+          "class": "fa-twitter"
+        },
+        "github": {
+          "url": "http://github.com/gillchristian",
+          "class": "fa-github"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/in/gillchristian",
+          "class": "fa-linkedin-square"
+        },
+        "mail": {
+          "url": "mailto:gillchristiang@gmail.com",
+          "class": "fa-envelope-o"
+        }
+      }
+    }
+  }
+}
