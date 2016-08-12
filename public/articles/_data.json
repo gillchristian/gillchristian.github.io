@@ -1,17 +1,1 @@
-{
-  "test-article": {
-    "title": "Test Article",
-    "excerpt": "Just a test article. Lorem ipsum dolor sit amet.",
-    "date": "January 2016"
-  },
-  "react-resources-list": {
-    "title": "React resources list",
-    "excerpt": "An opinionated list about problems you find when developing apps on the React ecosystem and some solutions.",
-    "date": "January 2016"
-  },
-  "prev-next": {
-    "title": "Got you covered dude",
-    "excerpt": "Harp is cool AF!!!",
-    "date": "January 2017"
-  }
-}
+{}

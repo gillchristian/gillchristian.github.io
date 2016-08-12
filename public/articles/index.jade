@@ -1,5 +1,12 @@
 h1 my blog
-- each article, slug in public.articles._data
-  h2
-    a(href="/articles/#{ slug }")= article.title
-  p= article.excerpt
+
+if JSON.stringify(public.articles._data) === JSON.stringify({})
+  .alert.alert-success
+    | ¯\_(ツ)_/¯
+    | Ups there are no articles published yet!  I'll start publishing soon.
+    | ¯\_(ツ)_/¯
+else
+  - each article, slug in public.articles._data
+    h2
+      a(href="/articles/#{ slug }")= article.title
+    p= article.excerpt
