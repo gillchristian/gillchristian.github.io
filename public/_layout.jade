@@ -2,6 +2,6 @@ include ./_head
 body.hack
   include ./_header
   main
-    .container
+    div(class="container #{current.source}")
       != yield
   include ./_footer

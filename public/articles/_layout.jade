@@ -1,9 +1,10 @@
+
 include ../_head
 body.hack
   include ../_header
   //- this is the content section
   main
-    .container
+    div(class="container #{current.source}")
       if current.source === 'index'
         != yield
       else
