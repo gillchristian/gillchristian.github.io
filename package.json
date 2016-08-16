@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
   "dependencies": {
-    "hack": "^0.5.2"
+    "hack": "^0.5.2",
+    "headroom.js": "^0.9.3"
   }
 }

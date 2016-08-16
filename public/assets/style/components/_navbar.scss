@@ -1,10 +1,13 @@
 // navbar bar
 header {
-  margin-bottom: 20px;
   width: 100%;
-  height: auto;
   border-bottom: 1px solid black;
-  background: white;
+  background-color: white;
+  position: fixed;
+}
+.header-fix {
+  width: 100%;
+  display: block;
 }
 .navbar {
   display: flex;
@@ -31,4 +34,15 @@ header {
   .blog-name {
     font-size: 1.5em;
   }
+}
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
