@@ -1,7 +1,6 @@
 include ../_head
 body.hack
-  header
-    include ../_header
+  include ../_header
   //- this is the content section
   main
     .container
@@ -15,6 +14,4 @@ body.hack
         .article
           != yield
           include _prev-next
-  footer
-    .container
-      include ../_footer
+  include ../_footer
