@@ -8,3 +8,13 @@
     background-color: blue;
   }
 }
+
+.lang-tag {
+  color: $dark-gray;
+  font-style: italic;
+  text-decoration: underline;
+  &:hover {
+    cursor: wait;
+    color: $links;
+  }
+}
