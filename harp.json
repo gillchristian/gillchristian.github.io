@@ -4,6 +4,10 @@
     "site": {
       "title": "Chrisitan Gill",
       "description": "a web dev blog",
+      "company": {
+        "name": "Altoros",
+        "url": "http://www.altoros.com/"
+      },
       "social": {
         "twitter": {
           "url": "http://twitter.com/gillchristian",

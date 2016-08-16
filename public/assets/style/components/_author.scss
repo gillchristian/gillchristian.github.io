@@ -1,0 +1,13 @@
+.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  .media {
+    width: 95%;
+  }
+  .avatar {
+    background-image: url("/images/avatar.jpg");
+    object-fit: contain;
+  }
+}

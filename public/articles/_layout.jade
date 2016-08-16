@@ -13,5 +13,6 @@ body.hack
           | #{' ' + date}
         .article
           != yield
+          include ../_author
           include _prev-next
   include ../_footer
