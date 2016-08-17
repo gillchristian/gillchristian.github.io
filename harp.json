@@ -25,6 +25,9 @@
           "url": "mailto:gillchristiang@gmail.com",
           "class": "fa-envelope-o"
         }
+      },
+      "services": {
+        "analytics": "UA-82775606-1"
       }
     }
   }
