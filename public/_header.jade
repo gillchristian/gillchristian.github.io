@@ -3,8 +3,5 @@ header
     .blog-name
       a(href='/')= site.title
     .items
-      //- a(href='/', class="#{ current.path.length === 1 && current.source === 'index'  ? 'active' : '' }") /home
-      a(href='/articles', class="#{ current.source === 'articles' || current.path.indexOf('articles') > -1 ? 'active' : '' }") /articles
-      a(href='/about-me', class="#{ current.source === 'about-me' ? 'active' : '' }") /about-me
-      a(href='/talks-projects', class="#{ current.source === 'talks-projects' ? 'active' : '' }") /talks-and-projects
+      include _nav-items
 .header-fix

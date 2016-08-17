@@ -1,3 +1,12 @@
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    display: block;
+    padding: 0 4px;
+  }
+}
+
 // navbar bar
 header {
   width: 100%;
@@ -18,22 +27,17 @@ header {
   padding: 5px;
   .blog-name {
     margin: 10px 0;
+    font-size: 1.5em;
   }
-  .items {
-    display: flex;
-    flex-wrap: wrap;
+  .nav-items {
     margin: 10px 0;
     a {
       margin: 5px 10px 5px 0;
       border-bottom: none;
       &.active {
-        background-color: $links;
-        color: white;
+        border-bottom: 1px solid $links;
       }
     }
-  }
-  .blog-name {
-    font-size: 1.5em;
   }
 }
 
