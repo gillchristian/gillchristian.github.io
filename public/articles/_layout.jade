@@ -1,7 +1,7 @@
 
-include ../_head
+include ../_partials/_head
 body.hack
-  include ../_header
+  include ../_partials/_header
   //- this is the content section
   main
     div(class="container #{current.source}")
@@ -14,7 +14,7 @@ body.hack
           | #{' ' + date}
         .article
           != yield
-          include ../_author
-          include _prev-next
-          include _comments
-  include ../_footer
+          include ../_partials/_author
+          include ../_partials/_prev-next
+          include ../_partials/_comments
+  include ../_partials/_footer

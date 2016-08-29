@@ -1,9 +1,9 @@
-include ./_head
+include _partials/_head
 body.hack
   - if (current.source !== "index")
-    include ./_header
+    include _partials/_header
   main
     div(class="container #{current.source}")
       != yield
   - if (current.source !== "index")
-    include ./_footer
+    include _partials/_footer
