@@ -39,3 +39,4 @@ jspm_packages
 
 # Dependencies
 public/assets/style/libs
+public/assets/js/bundle.js
