@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "title": "generator-api",
+      "tags": ["express", "mongodb", "mongoose", "docker"],
+      "url": "https://ndelvalle.github.io/generator-api/",
+      "repo": "https://github.com/ndelvalle/generator-api",
+      "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express."
+    },
+    {
       "title": "quark",
       "tags": ["react", "webpack", "express", "HMR", "universal"],
       "url": "https://github.com/gillchristian/quark",
@@ -16,7 +23,7 @@
     {
       "title": "itcss starter",
       "tags": ["css", "architecture", "itcss"],
-      "url": "https://github.com/gillchristian/itcss-starter",
+      "repo": "https://github.com/gillchristian/itcss-starter",
       "description": "Dead simple directories & files structure to organize CSS in a project."
     },
     {
@@ -29,7 +36,7 @@
     {
       "title": "cpt",
       "tags": ["php", "wordpress", "custom-post-types"],
-      "url": "https://github.com/gillchristian/CPT",
+      "repo": "https://github.com/gillchristian/CPT",
       "description": "Helper class to create Custom Pots Types in WordPress."
     }
   ],
