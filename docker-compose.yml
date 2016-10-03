@@ -3,7 +3,7 @@ version: '2'
 services:
   web:
     build: ./
-    command: npm run harp:dev
+    command: harp server --port 9000
     volumes:
       - ./:/app
     ports:

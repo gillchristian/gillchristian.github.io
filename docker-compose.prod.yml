@@ -3,8 +3,10 @@ version: '2'
 services:
   web:
     build: ./
-    command: npm run harp:prod
+    command: harp server --port 9000
     volumes:
       - ./:/app
     ports:
       - "9000:9000"
+    environment:
+      - NODE_ENV=production
