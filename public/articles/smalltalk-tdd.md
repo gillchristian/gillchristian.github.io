@@ -212,7 +212,7 @@ y ... **Passing** \o/
 
 Si bien quedaron muchos aspectos por ver, por ejemplo el uso de `setUp`, `tearDown` o `TestResource`para configurar el contexto de nuestros tests, o utilizar `TestSuite` para agrupar tests de clases relacionadas.
 
-Con este ejemplo podimos ver el valor de agregar _unit tests_ automatizados a nuestro código. Esto nos va a permitir estar seguros que el código funcione incluso cuando tengamos que modificar algún método en el futuro. Ya que el peor escenario va a ser revisar por que los tests están fallando.
+Con este ejemplo pudimos ver el valor de agregar _unit tests_ automatizados a nuestro código. Esto nos va a permitir estar seguros que el código funcione incluso cuando tengamos que modificar algún método en el futuro. Ya que el peor escenario va a ser revisar por que los tests están fallando.
 
 ----------------------------------------------------------
 
