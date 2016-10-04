@@ -1,1 +1,8 @@
-{}
+{
+  "smalltalk-tdd": {
+    "title": "Test unitarios en Smalltalk con Pharo y SUnit",
+    "article_id": 2000,
+    "excerpt": "[SPANISH] Cómo agregar tests unitarios para Smalltalk en Pharo utilizando SUnit.",
+    "date": "October 4th 2016"
+  }
+}
