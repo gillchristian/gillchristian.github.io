@@ -1,3 +1,10 @@
+script.
+  const header = document.querySelector('header')
+  const headerFix = document.querySelector('.header-fix')
+
+  if (headerFix && header) {
+    headerFix.style.height = header.offsetHeight + 'px'
+  }
 footer
   .footer.container
     div
