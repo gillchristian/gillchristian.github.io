@@ -7,40 +7,43 @@ const isProd = nodeEnv === 'production'
 module.exports = {
   devtool: isProd ? 'hidden-source-map' : 'cheap-eval-source-map',
   entry: {
-    bundle: ['babel-polyfill', './src/index.js']
+    bundle: ['babel-polyfill', './src/index.js'],
   },
   output: {
     path: path.join(__dirname, 'public', 'assets', 'js'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     loaders: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: ['babel-loader']
-      }
-    ]
+        loaders: ['babel-loader'],
+      },
+    ],
   },
   resolve: {
     extensions: ['.js'],
-    modules: [path.resolve('./src'), 'node_modules']
+    modules: [
+      'src',
+      'node_modules',
+    ],
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
+        warnings: false,
       },
       output: {
-        comments: false
+        comments: false,
       },
-      sourceMap: false
+      sourceMap: false,
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(nodeEnv)
-      }
-    })
-  ]
+        NODE_ENV: JSON.stringify(nodeEnv),
+      },
+    }),
+  ],
 }

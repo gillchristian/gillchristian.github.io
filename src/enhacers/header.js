@@ -8,8 +8,8 @@ if (headerFix && header) {
     offset: 100,
     tolerance: {
       up: 15,
-      down: 15
-    }
+      down: 15,
+    },
   })
   headroom.init()
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "js:watch": "webpack -w",
-    "js:build": "webpack",
+    "js:build": "NODE_ENV=production webpack",
     "start": "./scripts/start.prod.sh",
     "dev": "./scripts/start.dev.sh",
     "move:assets": "./scripts/assets.sh"
@@ -52,7 +52,8 @@
       "fetch"
     ],
     "rules": {
-      "import/no-extraneous-dependencies": 0
+      "import/no-extraneous-dependencies": 0,
+      "comma-dangle": ["error", "always-multiline"]
     },
     "ignores": [
       "public/assets/js"

@@ -1,5 +1,5 @@
 import 'whatwg-fetch'
-import hljs from 'highlight.js'
+import {initHighlightingOnLoad} from 'highlight.js'
 
 import 'enhacers/header'
 
@@ -16,4 +16,4 @@ loadMarkdown(
 )
 
 // highlight code blocks
-hljs.initHighlightingOnLoad()
+initHighlightingOnLoad()
