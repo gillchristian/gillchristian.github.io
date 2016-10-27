@@ -42,6 +42,26 @@
   ],
   "talks": [
     {
+      "title": "Developing with GIT",
+      "event": "Santa Fe - UTN - CISL 2016",
+      "eventUrl": "http://cisl.org.ar/cronograma/10-cisl2016-dia4-santa-fe-utn#.WBHYlMIrLQo",
+      "description": "Introduction to versioning code with GIT, as part of the \"Introduction to software development\" talk.",
+      "date": "Oct 2016",
+      "links": [
+        {
+          "url": "https://gillchristian.xyz/git-workshop",
+          "label": "Slides"
+        },
+        {
+          "url": "https://github.com/gillchristian/git-workshop",
+          "label": "repo"
+        },
+        {
+          "url": "https://www.facebook.com/psutnfrsf/videos/1158691657585160/",
+          "label": "stream"
+        }
+      ]
+    },{
       "title": "JavaScript ES6",
       "event": "JavaScript Meetup",
       "eventUrl": "http://www.meetup.com/js-Litoral/events/230947251/",
