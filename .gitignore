@@ -36,7 +36,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-
-# Dependencies
-public/assets/style/libs
-public/assets/js/bundle.js
