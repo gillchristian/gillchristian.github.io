@@ -3,11 +3,39 @@
   "version": "0.1.0",
   "description": "gillchristian personal site",
   "main": "index.js",
-  "scripts": {
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gillchristian/gillchristian.github.io.git"
+  },
+  "author": "gillchristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gillchristian/gillchristian.github.io/issues"
+  },
+  "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "style": "node-sass src/style/style.scss -o static/ --output-style compressed",
+    "style:w": "node-sass -w src/style/style.scss -o static/",
+    "cp-hack": "cp -r node_modules/hack/dist static/hack"
+  },
+  "dependencies": {
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-plugin-react": "^6.4.1",
+    "hack": "^0.5.2",
+    "next": "^1.0.0",
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "highlight.js": "^9.7.0",
+    "markdown": "^0.5.0",
+    "whatwg-fetch": "^1.0.0",
+    "xo": "^0.16.0"
+  },
+  "optionalDependencies": {
+    "node-sass": "^3.10.1"
   },
   "keywords": [
     "personal-site",
@@ -16,21 +44,6 @@
     "js",
     "full-stack"
   ],
-  "author": "gillchristian",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gillchristian/gillchristian.github.io/issues"
-  },
-  "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
-  "dependencies": {
-    "hack": "^0.5.2",
-  },
-  "devDependencies": {
-    "highlight.js": "^9.7.0",
-    "markdown": "^0.5.0",
-    "whatwg-fetch": "^1.0.0",
-    "xo": "^0.16.0"
-  },
   "xo": {
     "esnext": true,
     "space": true,
@@ -40,11 +53,19 @@
       "fetch"
     ],
     "rules": {
-      "import/no-extraneous-dependencies": 0,
-      "comma-dangle": ["error", "always-multiline"]
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "xo/filename-case": 0,
+      "react/jsx-space-before-closing": [
+        2,
+        "always"
+      ]
     },
     "ignores": [
       "public/assets/js"
-    ]
+    ],
+    "extends": "xo-react"
   }
 }
