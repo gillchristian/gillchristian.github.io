@@ -61,6 +61,10 @@
       "react/jsx-space-before-closing": [
         2,
         "always"
+      ],
+      "react/jsx-closing-bracket-location": [
+        2,
+        "tag-aligned"
       ]
     },
     "ignores": [
