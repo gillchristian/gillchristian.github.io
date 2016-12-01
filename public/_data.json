@@ -1,17 +1,17 @@
 {
   "projects": [
     {
+      "title": "trae",
+      "tags": ["fetch", "http", "api"],
+      "url": "https://github.com/huemul/trae",
+      "description": "Minimalistic Fetch based HTTP client"
+    },
+    {
       "title": "generator-api",
       "tags": ["express", "mongodb", "mongoose", "docker"],
       "url": "https://ndelvalle.github.io/generator-api/",
       "repo": "https://github.com/ndelvalle/generator-api",
       "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express."
-    },
-    {
-      "title": "quark",
-      "tags": ["react", "webpack", "express", "HMR", "universal"],
-      "url": "https://github.com/gillchristian/quark",
-      "description": "[WIP] Universal React starter app."
     },
     {
       "title": "gh-pages",
@@ -42,6 +42,30 @@
   ],
   "talks": [
     {
+      "title": "React, UI con esteroides",
+      "event": "JavaScript Meetup",
+      "eventUrl": "https://www.meetup.com/js-litoral/events/235803581/",
+      "description": "Introduction to UI development with React",
+      "date": "Nov 2016",
+      "links": [
+        {
+          "url": "https://gillchristian.xyz/react-intro",
+          "label": "Slides"
+        },
+        {
+          "url": "https://github.com/javascript-litoral/react-intro",
+          "label": "Repo"
+        },
+        {
+          "url": "https://javascript-litoral.github.io/react-intro",
+          "label": "Demo app"
+        },
+        {
+          "url": "https://youtu.be/REPQDmYnYPk?t=48m2s",
+          "label": "Stream"
+        }
+      ]
+    },{
       "title": "Developing with GIT",
       "event": "Santa Fe - UTN - CISL 2016",
       "eventUrl": "http://cisl.org.ar/cronograma/10-cisl2016-dia4-santa-fe-utn#.WBHYlMIrLQo",
@@ -54,11 +78,11 @@
         },
         {
           "url": "https://github.com/gillchristian/git-workshop",
-          "label": "repo"
+          "label": "Repo"
         },
         {
           "url": "https://www.facebook.com/psutnfrsf/videos/1158691657585160/",
-          "label": "stream"
+          "label": "Stream"
         }
       ]
     },{
