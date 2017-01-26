@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "title": "wallp",
+      "tags": ["golang", "cli"],
+      "url": "https://github.com/gillchristian/wallp",
+      "description": "A golang CLI app to change the wallpaper"
+    },
+    {
       "title": "trae",
       "tags": ["fetch", "http", "api"],
       "url": "https://github.com/huemul/trae",
