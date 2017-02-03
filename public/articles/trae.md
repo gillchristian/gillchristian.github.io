@@ -1,9 +1,7 @@
-# Why we came up with another http library
-
 **TL;DR;** we were already using [fetch](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) with some not-so-practical helpers.
 
 I found out about `fetch` a while ago when I was looking for what to use to do HTTP requests on React apps.
-Coming from jQuery and Angular this was something I never had to worry about, I would just use what the library/framework provided, and be happy about it.
+Coming from jQuery and Angular this was something I have never had to worry about because I would just use what the library/framework provided, and be happy with it.
 
 I get really excited about anything that pushes the web further and makes it better.
 And particularly with `fetch`, there are many reasons to get excited about:
@@ -24,11 +22,11 @@ You can read about them in depth in [Jake's post](https://jakearchibald.com/2015
 > It is JS we are talking about, you gotta use the latest stuff, right?
 
 Jokes aside, after trying it out for a little bit with some PoC's, I got the perfect opportunity to use it at work.
-I was starting a new project and thanks to the [Github's polyfill](https://github.com/github/fetch), I could already use it safely on those browsers that do not have support yet or will never have. Great!
+I was starting a new project and thanks to the [Github's polyfill](https://github.com/github/fetch), I could already use it safely on those browsers that do not have support yet or will never have it. Great!
 
 ## Native API cons
 
-Now `fetch` is a native API, and thus is not it's job to provide a library-like interface, with helpers, and shorthand methods.
+Now `fetch` is a native API, and thus it's not its job to provide a library-like interface, with helpers and shorthand methods.
 After some time of using it, I ended up with a bunch of helpers. Like these:
 
 ```javascript
@@ -79,10 +77,10 @@ export const getVideos = (id = '') => {
 
 You could say there is nothing wrong with it, but it did not feel right.
 I did not want to start another project and straight up copy my `fetch-utils` file.
-Neither I liked having a bunch of helpers, which is not bad at all, but I knew I could do better than that.
+Neither I liked having a bunch of helpers, which is not bad at all, but I knew I could do better.
 
 So I shared my concerns with Nico and he was like _"yo I got the same problems!"_.
-After discussing for a while some ideas and wrapping or heads around, we started to write a library.
+After discussing for a while some ideas and wrapping our heads around, we started to write a library.
 
 And that's how we ended up with [trae](https://github.com/huemul/trae).
 
@@ -103,7 +101,7 @@ And that's how we ended up with [trae](https://github.com/huemul/trae).
 
 </div>
 
-Not only a lot of people asked that but we did it ourselves.
+Not only a lot of people asked that but we also did it ourselves.
 
 Being kind of the default HTTP library it surely influenced us.
 Going through its code helped us a lot to understand the needs and internals of an HTTP library and to improve and polish some of our own ideas.
@@ -124,7 +122,7 @@ There are some [to-do](https://github.com/huemul/trae#todo) items on the list, b
 That does not mean we are not going to make improvements. We are using `trae` on a daily basis, and are looking for new ways to make it better.
 I even have the ~~maybe not so~~ crazy idea of building a dev tools extension with a [bunch of cool stuff](https://github.com/Huemul/trae-chrome-devtools) on it.
 
-We are very open about contributing, so fell free to ask anything or even submit a pull request if you find something to improve.
+We are very open about contributing, so feel free to ask anything or even submit a pull request if you find something to improve.
 
 ## Conclusion
 
