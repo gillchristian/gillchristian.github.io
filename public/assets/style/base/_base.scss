@@ -25,7 +25,13 @@ body {
   }
 }
 
-p img {
-  max-width: 100%;
-  height: auto;
+.centered {
+  display: flex;
+  justify-content: center;
+
+  &.column{
+    align-items: center;
+    flex-direction: column;
+  }
 }
+
