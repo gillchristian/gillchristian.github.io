@@ -3,12 +3,14 @@
     "title": "Trae, another HTTP library",
     "article_id": 3000,
     "excerpt": "Why we built our own fetch based HTTP library.",
-    "date": "February 3th 2017"
+    "date": "February 3th 2017",
+    "discuss": false
   },
   "smalltalk-tdd": {
     "title": "Test unitarios en Smalltalk con Pharo y SUnit",
     "article_id": 2000,
     "excerpt": "[SPANISH] Cómo agregar tests unitarios para Smalltalk en Pharo utilizando SUnit.",
-    "date": "October 4th 2016"
+    "date": "October 4th 2016",
+    "discuss": true
   }
 }

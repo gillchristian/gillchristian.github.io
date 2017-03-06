@@ -16,5 +16,6 @@ body.hack
           != yield
           include ../_partials/_author
           include ../_partials/_prev-next
-          include ../_partials/_comments
+          if public.articles._data[current.source].discuss
+            include ../_partials/_comments
   include ../_partials/_footer
