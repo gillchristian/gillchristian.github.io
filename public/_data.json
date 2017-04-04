@@ -47,7 +47,19 @@
     }
   ],
   "talks": [
+
     {
+      "title": "FP for the People",
+      "event": "Altoros Tech Friday (internal talk)",
+      "eventUrl": "#",
+      "description": "Core principles of FP and why to use it on JS",
+      "date": "March 2017",
+      "links": [
+        {
+          "url": "https://docs.google.com/presentation/d/1zSjCmYPQsxVszvBa1eBjYv5j3rQiMXyJgfFNVfoMOic/edit?usp=sharing"
+        }
+      ]
+    },{
       "title": "React, UI con esteroides",
       "event": "JavaScript Meetup",
       "eventUrl": "https://www.meetup.com/js-litoral/events/235803581/",
