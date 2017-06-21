@@ -9,7 +9,7 @@ footer
   .footer.container
     div
       - each account in site.social
-        a.social-link(href="#{account.url}", target="_blank", rel="noopener")
+        a.social-link(href="#{account.url}", target="_blank", rel="noopener noreferrer")
           i(class="fa #{account.class} fa-2x")
     div #{new Date().getFullYear()} © gillchristian
 
