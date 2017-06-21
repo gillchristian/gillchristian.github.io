@@ -6,6 +6,11 @@ import 'enhacers/header'
 import {loadMarkdown} from 'lib/markdown'
 
 loadMarkdown(
+  'reading-content',
+  'https://raw.githubusercontent.com/gillchristian/raws/master/reading-list.md'
+)
+
+loadMarkdown(
   'musts-content',
   'https://raw.githubusercontent.com/gillchristian/raws/master/musts.md'
 )

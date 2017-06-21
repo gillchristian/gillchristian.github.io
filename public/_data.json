@@ -1,30 +1,37 @@
 {
   "projects": [
     {
-      "title": "wallp",
-      "tags": ["golang", "cli"],
-      "url": "https://github.com/gillchristian/wallp",
-      "description": "A golang CLI app to change the wallpaper"
-    },
-    {
       "title": "trae",
       "tags": ["fetch", "http", "api"],
       "url": "https://github.com/huemul/trae",
       "description": "Minimalistic Fetch based HTTP client"
     },
     {
+      "title": "chimi",
+      "tags": ["markdown", "runner", "javascript", "snippets"],
+      "url": "https://github.com/Huemul/chimi",
+      "description": "Run JavaScript snippets from your markdown files"
+    },
+    {
+      "title": "tic-tac-toe",
+      "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
+      "url": "https://gillchristian.xyz/tic-tac-toe-glam",
+      "repo": "https://github.com/gillchristian/tic-tac-toe",
+      "description": "A comparison between 💅 styled-components and glamorous 💄"
+    },
+    {
+      "title": "wallp",
+      "tags": ["golang", "cli"],
+      "url": "https://github.com/gillchristian/wallp",
+      "description": "A golang CLI app to change the wallpaper"
+    },
+    {
       "title": "generator-api",
       "tags": ["express", "mongodb", "mongoose", "docker"],
       "url": "https://ndelvalle.github.io/generator-api/",
       "repo": "https://github.com/ndelvalle/generator-api",
-      "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express."
-    },
-    {
-      "title": "gh-pages",
-      "tags": ["react", "webpack", "express", "github-api"],
-      "url": "http://gillchristian.github.io/gh-pages",
-      "repo": "https://github.com/gillchristian/gh-pages",
-      "description": "Find the repos with gh-pages of Github user."
+      "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express.",
+      "external": true
     },
     {
       "title": "itcss starter",

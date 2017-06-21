@@ -1,10 +1,10 @@
-h1 Meetups, Talks & Conferences
+h1 Talks at meetups, conferences & more
 - each talk in public._data.talks
   .media
     .media-body
       .media-heading
         | #{talk.title + ' | '}
-        a(href="#{talk.eventUrl}", target="_blank", rel="noopener")= talk.event
+        a(href="#{talk.eventUrl}", target="_blank", rel="noopener noreferrer")= talk.event
       .media-content
         | #{talk.description}
         br
@@ -12,7 +12,7 @@ h1 Meetups, Talks & Conferences
         | #{' ' + talk.date}
         br
         - each link, index in talk.links
-          a(href="#{link.url}", target="_blank", rel="noopener")= link.label
+          a(href="#{link.url}", target="_blank", rel="noopener noreferrer")= link.label
           if index < (talk.links.length - 1)
             | #{' | '}
 
@@ -27,8 +27,8 @@ h1 Projects
         | #{project.description}
         br
         if project.url
-          a(href="#{project.url}", target="_blank", rel="noopener") view
+          a(href="#{project.url}", target="_blank", rel="noopener noreferrer") view
         if project.repo
           if project.url
             | #{' | '}
-          a(href="#{project.repo}", target="_blank", rel="noopener") repo
+          a(href="#{project.repo}", target="_blank", rel="noopener noreferrer") repo
