@@ -3,7 +3,8 @@ h1 Talks at meetups, conferences & more
   - each talk in public._data.talks
     .flex-item
       .card
-        .card-header= talk.title
+        .card-header(style="background-color: #{talk.color}")
+          strong= talk.title
         .card-content
           .inner
             a(href="#{talk.eventUrl}", target="_blank", rel="noopener noreferrer")= talk.event

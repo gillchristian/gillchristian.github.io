@@ -4,26 +4,30 @@
       "title": "trae",
       "tags": ["fetch", "http", "api"],
       "url": "https://github.com/huemul/trae",
-      "description": "Minimalistic Fetch based HTTP client"
+      "description": "Minimalistic Fetch based HTTP client",
+      "color": "rgba(253, 233, 197, 0.5)"
     },
     {
       "title": "chimi",
       "tags": ["markdown", "runner", "javascript", "snippets"],
       "url": "https://github.com/Huemul/chimi",
-      "description": "Run JavaScript snippets from your markdown files"
+      "description": "Run JavaScript snippets from your markdown files",
+      "color": "rgba(241, 224, 90, 0.5)"
     },
     {
       "title": "tic-tac-toe",
       "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
       "url": "https://gillchristian.xyz/tic-tac-toe-glam",
       "repo": "https://github.com/gillchristian/tic-tac-toe",
-      "description": "A comparison between 💅 styled-components and glamorous 💄"
+      "description": "A comparison between 💅 styled-components and glamorous 💄",
+      "color": "rgba(204, 58, 75, 0.5)"
     },
     {
       "title": "wallp",
       "tags": ["golang", "cli"],
       "url": "https://github.com/gillchristian/wallp",
-      "description": "A golang CLI app to change the wallpaper"
+      "description": "A golang CLI app to change the wallpaper",
+      "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "generator-api",
@@ -31,26 +35,30 @@
       "url": "https://ndelvalle.github.io/generator-api/",
       "repo": "https://github.com/ndelvalle/generator-api",
       "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express.",
-      "external": true
+      "isExternal": true,
+      "color": "rgba(21, 153, 87, 0.5)"
     },
     {
       "title": "itcss starter",
       "tags": ["css", "architecture", "itcss"],
       "repo": "https://github.com/gillchristian/itcss-starter",
-      "description": "Dead simple directories & files structure to organize CSS in a project."
+      "description": "Dead simple directories & files structure to organize CSS in a project.",
+      "color": "rgba(86, 61, 124, 0.5)"
     },
     {
       "title": "bandoneon",
       "tags": ["jquery", "plugin"],
       "url": "http://gillchristian.github.io/bandoneon",
       "repo": "https://github.com/gillchristian/bandoneon",
-      "description": "Simple jQuery acorddion plugin."
+      "description": "Simple jQuery acorddion plugin.",
+      "color": "rgba(209, 143, 79, 0.5)"
     },
     {
       "title": "cpt",
       "tags": ["php", "wordpress", "custom-post-types"],
       "repo": "https://github.com/gillchristian/CPT",
-      "description": "Helper class to create Custom Pots Types in WordPress."
+      "description": "Helper class to create Custom Pots Types in WordPress.",
+      "color": "rgba(79, 93, 149, 0.5)"
     }
   ],
   "talks": [
@@ -66,7 +74,8 @@
           "url": "https://docs.google.com/presentation/d/1zSjCmYPQsxVszvBa1eBjYv5j3rQiMXyJgfFNVfoMOic/edit?usp=sharing",
           "label": "Slides"
         }
-      ]
+      ],
+      "color": "rgb(221, 221, 221)"
     },{
       "title": "React, UI con esteroides",
       "event": "JavaScript Meetup",
@@ -90,7 +99,8 @@
           "url": "https://youtu.be/REPQDmYnYPk?t=48m2s",
           "label": "Stream"
         }
-      ]
+      ],
+      "color": "rgba(255, 108, 84, 0.5)"
     },{
       "title": "Developing with GIT",
       "event": "Santa Fe - UTN - CISL 2016",
@@ -110,7 +120,8 @@
           "url": "https://www.facebook.com/psutnfrsf/videos/1158691657585160/",
           "label": "Stream"
         }
-      ]
+      ],
+      "color": "rgba(34, 186, 217, 0.5)"
     },{
       "title": "JavaScript ES6",
       "event": "JavaScript Meetup",
@@ -126,7 +137,8 @@
           "url": "https://github.com/JavascriptLitoral/es6-features",
           "label": "Repo"
         }
-      ]
+      ],
+      "color": "rgba(245, 218, 85, 0.5)"
     },
     {
       "title": "Introduction to Angular",
@@ -151,7 +163,8 @@
           "url": "https://github.com/gillchristian/font-awesome-store",
           "label": "Repo"
         }
-      ]
+      ],
+      "color": "rgba(221, 0, 49, 0.5)"
     }
   ]
 }

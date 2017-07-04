@@ -3,7 +3,9 @@ h1 OpenSource Projects
   - each project in public._data.projects
     .flex-item
       .card
-        .card-header= project.title.toUpperCase()
+        .card-header(style="background-color: #{project.color}")
+          strong= project.title.toUpperCase()
+          | #{ project.isExternal ? ' (contributor)' : '' }
         .card-content
           .inner= project.description
           .inner
