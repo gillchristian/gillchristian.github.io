@@ -1,6 +1,11 @@
+- function activeClass(condition) {
+-   return condition ? 'active' : ''
+- }
+
 .nav-items
-  a(href='/about-me', class="#{ current.source === 'about-me' ? 'active' : '' }") about-me
-  a(href='/articles', class="#{ current.source === 'articles' || current.path.indexOf('articles') > -1 ? 'active' : '' }") articles
-  a(href='/talks-projects', class="#{ current.source === 'talks-projects' ? 'active' : '' }") talks-and-projects
-  a(href='/musts', class="#{ current.source === 'musts' ? 'active' : '' }") musts
-  a(href='/reading', class="#{ current.source === 'reading' ? 'active' : '' }") reading
+  a(href='/about-me', class="#{ activeClass(current.source === 'about-me') }") about-me
+  a(href='/projects', class="#{ activeClass(current.source === 'projects') }") projects
+  a(href='/talks', class="#{ activeClass(current.source === 'talks') }") talks
+  a(href='/articles', class="#{ activeClass( current.source === 'articles' || current.path.indexOf('articles') > -1 ) }") articles
+  a(href='/musts', class="#{ activeClass(current.source === 'musts') }") musts
+  a(href='/reading', class="#{ activeClass(current.source === 'reading') }") reading
