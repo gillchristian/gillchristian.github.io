@@ -15,3 +15,16 @@
 .hack ul ul {
   margin-top: 5px;
 }
+
+// .card .inner
+.card .inner {
+  padding: 0.25rem 1rem;
+
+  &:last-child {
+    padding-bottom: 1rem;
+  }
+
+  &:first-child {
+    padding-top: 1rem;
+  }
+}

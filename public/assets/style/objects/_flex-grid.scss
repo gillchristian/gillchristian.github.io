@@ -1,0 +1,10 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .flex-item {
+    width: 48%;
+    min-width: 300px;
+    margin: 10px 10px 10px 0;
+  }
+}
