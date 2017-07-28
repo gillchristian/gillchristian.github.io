@@ -65,14 +65,18 @@
 
     {
       "title": "FP for the People",
-      "event": "Altoros Tech Friday (internal talk)",
-      "eventUrl": "#",
+      "event": "JavaScript Meetup",
+      "eventUrl": "https://www.meetup.com/js-litoral/events/241974602/",
       "description": "Core principles of FP and why to use it on JS",
-      "date": "March 2017",
+      "date": "July 2017",
       "links": [
         {
-          "url": "https://docs.google.com/presentation/d/1zSjCmYPQsxVszvBa1eBjYv5j3rQiMXyJgfFNVfoMOic/edit?usp=sharing",
+          "url": "https://gillchristian.xyz/fp-in-js",
           "label": "Slides"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WIl921KAX0g",
+          "label": "Stream"
         }
       ],
       "color": "rgb(221, 221, 221)"
