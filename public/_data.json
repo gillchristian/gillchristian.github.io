@@ -15,12 +15,12 @@
       "color": "rgba(241, 224, 90, 0.5)"
     },
     {
-      "title": "tic-tac-toe",
-      "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
-      "url": "https://gillchristian.xyz/tic-tac-toe-glam",
-      "repo": "https://github.com/gillchristian/tic-tac-toe",
-      "description": "A comparison between 💅 styled-components and glamorous 💄",
-      "color": "rgba(204, 58, 75, 0.5)"
+      "title": "skratch",
+      "tags": ["preact", "service-worker", "notes"],
+      "url": "https://skratch.xyz",
+      "repo": "https://github.com/gillchristian/scratch",
+      "description": "Minimalistic notes taking offline app",
+      "color": "rgba(53, 108, 93, 0.5)"
     },
     {
       "title": "wallp",
@@ -28,6 +28,21 @@
       "url": "https://github.com/gillchristian/wallp",
       "description": "A golang CLI app to change the wallpaper",
       "color": "rgba(55, 94, 171, 0.5)"
+    },
+    {
+      "title": "wkon",
+      "tags": ["bash", "terminal"],
+      "url": "https://github.com/gillchristian/wkon",
+      "description": "Directory based terminal notes",
+      "color": "rgba(137, 224, 81, 0.5)"
+    },
+    {
+      "title": "tic-tac-toe",
+      "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
+      "url": "https://gillchristian.xyz/tic-tac-toe-glam",
+      "repo": "https://github.com/gillchristian/tic-tac-toe",
+      "description": "A comparison between 💅 styled-components and glamorous 💄",
+      "color": "rgba(204, 58, 75, 0.5)"
     },
     {
       "title": "generator-api",
@@ -44,21 +59,6 @@
       "repo": "https://github.com/gillchristian/itcss-starter",
       "description": "Dead simple directories & files structure to organize CSS in a project.",
       "color": "rgba(86, 61, 124, 0.5)"
-    },
-    {
-      "title": "bandoneon",
-      "tags": ["jquery", "plugin"],
-      "url": "http://gillchristian.github.io/bandoneon",
-      "repo": "https://github.com/gillchristian/bandoneon",
-      "description": "Simple jQuery acorddion plugin.",
-      "color": "rgba(209, 143, 79, 0.5)"
-    },
-    {
-      "title": "cpt",
-      "tags": ["php", "wordpress", "custom-post-types"],
-      "repo": "https://github.com/gillchristian/CPT",
-      "description": "Helper class to create Custom Pots Types in WordPress.",
-      "color": "rgba(79, 93, 149, 0.5)"
     }
   ],
   "talks": [
