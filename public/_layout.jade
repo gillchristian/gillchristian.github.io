@@ -1,5 +1,9 @@
+- function homeClass() {
+-   return current.path.length === 1 && current.source === 'index' ? 'home' : ''
+- }
+
 include _partials/_head
-body.hack
+body(class="hack #{ homeClass() }")
   - if (current.source !== "index")
     include _partials/_header
   main
