@@ -4,7 +4,7 @@
       "title": "trae",
       "tags": ["fetch", "http", "api"],
       "url": "https://github.com/huemul/trae",
-      "description": "Minimalistic Fetch based HTTP client",
+      "description": "Fetch based HTTP client for Node & the browser",
       "color": "rgba(253, 233, 197, 0.5)"
     },
     {
@@ -16,24 +16,24 @@
     },
     {
       "title": "skratch",
-      "tags": ["preact", "service-worker", "notes"],
+      "tags": ["react", "service-worker", "notes", "draft-js", "PWA"],
       "url": "https://skratch.xyz",
       "repo": "https://github.com/gillchristian/scratch",
-      "description": "Minimalistic notes taking offline app",
+      "description": "Minimalistic notes app",
       "color": "rgba(53, 108, 93, 0.5)"
     },
     {
       "title": "wallp",
       "tags": ["golang", "cli"],
       "url": "https://github.com/gillchristian/wallp",
-      "description": "A golang CLI app to change the wallpaper",
+      "description": "A golang CLI app to change the desktop wallpaper",
       "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "wkon",
       "tags": ["bash", "terminal"],
       "url": "https://github.com/gillchristian/wkon",
-      "description": "Directory based terminal notes",
+      "description": "Notes on your terminal, per directory",
       "color": "rgba(137, 224, 81, 0.5)"
     },
     {
@@ -62,7 +62,6 @@
     }
   ],
   "talks": [
-
     {
       "title": "FP for the People",
       "event": "JavaScript Meetup",

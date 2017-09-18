@@ -12,11 +12,16 @@
 /* --- Colors --- */
 @import 'colors';
 
+// ---------------------
+
 .hack ul ul {
   margin-top: 5px;
 }
 
-// .card .inner
+.hack h1 {
+  padding-top: 0;
+}
+
 .card .inner {
   padding: 0.25rem 1rem;
 
