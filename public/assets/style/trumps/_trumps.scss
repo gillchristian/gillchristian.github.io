@@ -20,6 +20,14 @@
 
 .hack h1 {
   padding-top: 0;
+
+  &:after {
+    bottom: 15px;
+  }
+}
+
+.hack h2 {
+  margin-botton: 1.25rem;
 }
 
 .card .inner {
