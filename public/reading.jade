@@ -15,13 +15,20 @@ blockquote(style="display: none;")
 h1 my reading list
 
 p
-  i These are the books I've read (✔), I'm reading (⏳) or I plan to (🔜).
+  i
+    | These are the books I've read (✔), I'm reading (⏳) or I plan to (🔜).
+    | They are a part of
+    | #{' '}
+    a(href="/goals") my goals
+    | #{'.'}
+
+#reading-content.md-page--loading
+  .loading
+
+hr
 
 p
   i
-    | #{'Have suggestions? '}
+    | #{'What do you think ? Have suggestions? '}
     a(href="https://twitter.com/gillchristian", target="_blank", rel="noopener noreferrer") @gillchristian
     | #{' :D'}
-
-#reading-content.reading-content-loading
-  .loading

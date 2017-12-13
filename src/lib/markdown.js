@@ -1,7 +1,7 @@
 import {markdown} from 'markdown'
 import {readOrReject} from 'lib/fetch'
 
-export async function loadMarkdown(targetId, url) {
+export async function loadMarkdown(targetId, url, andThen = s => s) {
   const target = document.getElementById(targetId)
   if (!target) {
     return
@@ -9,8 +9,9 @@ export async function loadMarkdown(targetId, url) {
   try {
     const response = await fetch(url)
     const text = await readOrReject(response, false)
-    target.innerHTML = markdown.toHTML(text)
-    target.classList.remove(`${targetId}-loading`)
+    const processedText = andThen(text)
+    target.innerHTML = markdown.toHTML(processedText)
+    target.classList.remove('md-page--loading')
   } catch (err) {
     console.error(err)
     target.innerHTML = `
