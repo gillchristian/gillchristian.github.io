@@ -30,6 +30,13 @@
       "color": "rgba(55, 94, 171, 0.5)"
     },
     {
+      "title": "dadjokes",
+      "tags": ["node", "javascript", "cli"],
+      "repo": "https://github.com/gillchristian/dadjokes",
+      "description": "/r/dadjokes front-page in your terminal",
+      "color": "rgba(36, 112, 253, 0.85)"
+    },
+    {
       "title": "wkon",
       "tags": ["bash", "terminal"],
       "url": "https://github.com/gillchristian/wkon",
