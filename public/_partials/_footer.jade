@@ -1,16 +1,17 @@
-script.
-  const header = document.querySelector('header')
-  const headerFix = document.querySelector('.header-fix')
+- if (current.source !== "index")
+  script.
+    const header = document.querySelector('header')
+    const headerFix = document.querySelector('.header-fix')
 
-  if (headerFix && header) {
-    headerFix.style.height = header.offsetHeight + 'px'
-  }
-footer
-  .footer.container
-    div
-      - each account in site.social
-        a.social-link(href="#{account.url}", target="_blank", rel="noopener noreferrer")
-          i(class="fa #{account.class} fa-2x")
-    div #{new Date().getFullYear()} © gillchristian
+    if (headerFix && header) {
+      headerFix.style.height = header.offsetHeight + 'px'
+    }
+  footer
+    .footer.container
+      div
+        - each account in site.social
+          a.social-link(href="#{account.url}", target="_blank", rel="noopener noreferrer")
+            i(class="fa #{account.class} fa-2x")
+      div #{new Date().getFullYear()} © gillchristian
 
 script(src="/assets/js/bundle.js")

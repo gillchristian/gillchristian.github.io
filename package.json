@@ -29,7 +29,8 @@
   "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
   "dependencies": {
     "hack": "^0.5.2",
-    "headroom.js": "^0.9.3"
+    "headroom.js": "^0.9.3",
+    "trae": "^1.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -53,7 +54,10 @@
     ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
-      "comma-dangle": ["error", "always-multiline"]
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
     },
     "ignores": [
       "public/assets/js"

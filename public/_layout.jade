@@ -1,13 +1,27 @@
-- function homeClass() {
--   return current.path.length === 1 && current.source === 'index' ? 'home' : ''
+- function isHome() {
+-   return current.path.length === 1 && current.source === 'index'
 - }
 
+- function homeClass() {
+-   return isHome() ? 'home' : ''
+- }
+
+- function getRandomIndex(xs) {
+-   var max = xs.length
+-   return Math.floor(Math.random() * Math.floor(max))
+- }
+
+- function getBg(bgs) {
+-   if (!isHome()) return ''
+-   return "background-image: url(" + bgs[getRandomIndex(bgs)] + ");"
+- }
+
+
 include _partials/_head
-body(class="hack #{ homeClass() }")
+body(class="hack #{ homeClass() }" style="#{ getBg(public._data.backgrounds) }")
   - if (current.source !== "index")
     include _partials/_header
   main
     div(class="container #{current.source}")
       != yield
-  - if (current.source !== "index")
-    include _partials/_footer
+  include _partials/_footer

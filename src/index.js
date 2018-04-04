@@ -4,12 +4,19 @@ import { initHighlightingOnLoad } from 'highlight.js'
 import 'enhacers/header'
 
 import { loadMarkdown } from 'lib/markdown'
+import { readOrReject } from 'lib/fetch'
+
+import data from '../public/_data.json'
+
+initHighlightingOnLoad()
+
+// --- load content ------------------------------------------------------------
 
 loadMarkdown(
   'reading-content',
   'https://raw.githubusercontent.com/gillchristian/goals/master/content-list/books.md',
   md => {
-    const [head, ...tail] = md.split('\n')
+    const [, ...tail] = md.split('\n')
     return tail.join('\n')
   }
 )
@@ -33,8 +40,21 @@ loadMarkdown(
 
     return [head, comments, ...tail].join('\n')
   }
-
 )
 
-// highlight code blocks
-initHighlightingOnLoad()
+// --- home background switcher ------------------------------------------------
+
+const getRandomIndex = xs => Math.floor(Math.random() * Math.floor(xs.length))
+
+const homeBg = document.querySelector('body.home')
+const reloadIcon = document.querySelector('.reload-bg')
+
+if (homeBg && reloadIcon) {
+  reloadIcon.addEventListener('click', () => {
+    const image = data.backgrounds[getRandomIndex(data.backgrounds)]
+
+    homeBg.style.backgroundImage = `url(${image})`
+  })
+}
+
+// -----------------------------------------------------------------------------

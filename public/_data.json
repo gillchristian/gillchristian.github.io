@@ -176,5 +176,14 @@
       ],
       "color": "rgba(221, 0, 49, 0.5)"
     }
+  ],
+  "backgrounds": [
+    "https://i.giphy.com/media/nnRq6EvRl982Y/giphy.webp",
+    "https://i.giphy.com/media/3osxYamKD88c6pXdfO/giphy.webp",
+    "https://i.giphy.com/media/147bTtWEWs78iY/giphy.webp",
+    "https://i.giphy.com/media/vFKqnCdLPNOKc/giphy.webp",
+    "https://media1.giphy.com/media/RFsddEHX0UOQ/200w.webp",
+    "https://media1.giphy.com/media/l0MYxqKEmJoL150TC/200w.webp",
+    "https://i.giphy.com/media/RT7aITJt2BgUo/giphy.webp"
   ]
 }
