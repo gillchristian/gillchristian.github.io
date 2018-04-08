@@ -71,7 +71,7 @@
   "talks": [
     {
       "title": "FP for the People",
-      "event": "JavaScript Meetup",
+      "event": "Javascript Litoral Meetup",
       "eventUrl": "https://www.meetup.com/js-litoral/events/241974602/",
       "description": "Core principles of FP and why to use it on JS",
       "date": "July 2017",
@@ -88,7 +88,7 @@
       "color": "rgb(221, 221, 221)"
     },{
       "title": "React, UI con esteroides",
-      "event": "JavaScript Meetup",
+      "event": "Javascript Litoral Meetup",
       "eventUrl": "https://www.meetup.com/js-litoral/events/235803581/",
       "description": "Introduction to UI development with React",
       "date": "Nov 2016",
@@ -113,7 +113,7 @@
       "color": "rgba(255, 108, 84, 0.5)"
     },{
       "title": "Developing with GIT",
-      "event": "Santa Fe - UTN - CISL 2016",
+      "event": "CISL 2016 - UTN - Santa Fe",
       "eventUrl": "http://cisl.org.ar/cronograma/10-cisl2016-dia4-santa-fe-utn#.WBHYlMIrLQo",
       "description": "Introduction to versioning code with GIT, as part of the \"Introduction to software development\" talk.",
       "date": "Oct 2016",
@@ -134,7 +134,7 @@
       "color": "rgba(34, 186, 217, 0.5)"
     },{
       "title": "JavaScript ES6",
-      "event": "JavaScript Meetup",
+      "event": "Javascript Litoral Meetup",
       "eventUrl": "http://www.meetup.com/js-Litoral/events/230947251/",
       "description": "EcmaSctip 6 features showcase & usage with Babel.",
       "date": "May 2016",
@@ -152,7 +152,7 @@
     },
     {
       "title": "Introduction to Angular",
-      "event": "JavaScript Meetup",
+      "event": "Javascript Litoral Meetup",
       "eventUrl": "http://www.meetup.com/js-Litoral/events/229145986/",
       "description": "Introduction to Angular framework, plus some live examples.",
       "date": "March 2016",
@@ -183,7 +183,6 @@
     "https://i.giphy.com/media/147bTtWEWs78iY/giphy.webp",
     "https://i.giphy.com/media/vFKqnCdLPNOKc/giphy.webp",
     "https://media1.giphy.com/media/RFsddEHX0UOQ/200w.webp",
-    "https://media1.giphy.com/media/l0MYxqKEmJoL150TC/200w.webp",
-    "https://i.giphy.com/media/RT7aITJt2BgUo/giphy.webp"
+    "https://media1.giphy.com/media/l0MYxqKEmJoL150TC/200w.webp"
   ]
 }

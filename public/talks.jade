@@ -8,21 +8,21 @@ blockquote
 
 h1 Talks at meetups & conferences
 
-.flex-grid
+div
   - each talk in public._data.talks
-    .flex-item
-      .card
-        .card-header(style="background-color: #{talk.color}")
-          strong= talk.title
-        .card-content
-          .inner
-            a(href="#{talk.eventUrl}", target="_blank", rel="noopener noreferrer")= talk.event
-          .inner
-            i.fa.fa-clock-o
-            | #{' ' + talk.date}
-          .inner= talk.description
-          .inner
-            - each link, index in talk.links
-              a(href="#{link.url}", target="_blank", rel="noopener noreferrer")= link.label
-              if index < (talk.links.length - 1)
-                | #{' | '}
+    .project
+      div
+        span.project--title= talk.title.toUpperCase()
+        span= ' - '
+        span.project--description
+          a(href="#{talk.eventUrl}", target="_blank", rel="noopener noreferrer")= talk.event
+        span= ' - '
+        span.project--description
+          i.fa.fa-clock-o
+          | #{' ' + talk.date}
+      .project--block= talk.description
+      .project--block
+        - each link, index in talk.links
+          a(href="#{link.url}", target="_blank", rel="noopener noreferrer")= link.label
+          if index < (talk.links.length - 1)
+            | #{' | '}

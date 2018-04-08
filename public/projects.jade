@@ -10,25 +10,28 @@ blockquote
 
 h1 OpenSource Projects
 
-.flex-grid
+div
   - each project in public._data.projects
-    .flex-item
-      .card
-        .card-header(style="background-color: #{project.color}")
-          strong= project.title.toUpperCase()
-          | #{ project.isExternal ? ' (contributor)' : '' }
-        .card-content
-          .inner= project.description
-          .inner
-            | #{'[ '}
-            span
-              - each tag, index in project.tags
-                i= tag + (index + 1 === project.tags.length ? '' : ', ')
-            | #{' ]'}
-          .inner
-            if project.url
-              a(href="#{project.url}", target="_blank", rel="noopener noreferrer") view
-            if project.repo
-              if project.url
-                | #{' | '}
-              a(href="#{project.repo}", target="_blank", rel="noopener noreferrer") repo
+    .project
+      div
+        span.project--title= project.title.toUpperCase()
+        span.project--description
+          if project.isExternal
+            span (
+            strong
+              i contributor
+            span )
+        span.project--description= project.description
+      .project--block
+        | #{'[ '}
+        span
+          - each tag, index in project.tags
+            i= tag + (index + 1 === project.tags.length ? '' : ', ')
+        | #{' ]'}
+      .project--block
+        if project.url
+          a(href="#{project.url}", target="_blank", rel="noopener noreferrer") view
+        if project.repo
+          if project.url
+            | #{' | '}
+          a(href="#{project.repo}", target="_blank", rel="noopener noreferrer") repo

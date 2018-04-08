@@ -1,0 +1,19 @@
+.project {
+  margin-bottom: 30px;
+}
+
+.project--title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.project--description {
+  margin-left: 5px;
+  a {
+    border-bottom: none;
+  }
+}
+
+.project--block {
+  margin-top: 5px;
+}
