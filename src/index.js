@@ -31,17 +31,6 @@ loadMarkdown(
   'https://raw.githubusercontent.com/gillchristian/dev-resources/master/README.md'
 )
 
-loadMarkdown(
-  'goals',
-  'https://raw.githubusercontent.com/gillchristian/goals/master/README.md',
-  md => {
-    const [head, ...tail] = md.split('\n')
-    const comments = '_Find the repo [here](https://github.com/gillchristian/goals)_.\n'
-
-    return [head, comments, ...tail].join('\n')
-  }
-)
-
 // --- home background switcher ------------------------------------------------
 
 const getRandomIndex = xs => Math.floor(Math.random() * Math.floor(xs.length))
