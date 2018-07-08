@@ -23,6 +23,13 @@
       "color": "rgba(53, 108, 93, 0.5)"
     },
     {
+      "title": "rl",
+      "tags": ["golang", "cli"],
+      "url": "https://github.com/gillchristian/rl",
+      "description": "FIFO reading list CLI tool",
+      "color": "rgba(55, 94, 171, 0.5)"
+    },
+    {
       "title": "wallp",
       "tags": ["golang", "cli"],
       "url": "https://github.com/gillchristian/wallp",
@@ -57,6 +64,15 @@
       "url": "https://ndelvalle.github.io/generator-api/",
       "repo": "https://github.com/ndelvalle/generator-api",
       "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express.",
+      "isExternal": true,
+      "color": "rgba(21, 153, 87, 0.5)"
+    },
+    {
+      "title": "array-smooth",
+      "tags": ["javascript", "algorithms"],
+      "url": "https://github.com/ndelvalle/array-smooth",
+      "repo": "https://github.com/ndelvalle/array-smooth",
+      "description": "Moving average smooth algorithm.",
       "isExternal": true,
       "color": "rgba(21, 153, 87, 0.5)"
     },
