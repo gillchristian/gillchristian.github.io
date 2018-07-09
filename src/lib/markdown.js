@@ -1,5 +1,5 @@
-import {markdown} from 'markdown'
-import {readOrReject} from 'lib/fetch'
+import { markdown } from 'markdown'
+import { readOrReject } from 'lib/fetch'
 
 export async function loadMarkdown(targetId, url, andThen = s => s) {
   const target = document.getElementById(targetId)

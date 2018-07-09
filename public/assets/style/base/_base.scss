@@ -13,7 +13,7 @@
 @import 'code';
 
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,9 +29,8 @@ body {
   display: flex;
   justify-content: center;
 
-  &.column{
+  &.column {
     align-items: center;
     flex-direction: column;
   }
 }
-

@@ -24,13 +24,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'],
-    modules: [
-      'src',
-      'node_modules',
-    ],
+    modules: ['src', 'node_modules'],
   },
   plugins: [
-    new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
+    new webpack.LoaderOptionsPlugin({ minimize: true, debug: false }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
