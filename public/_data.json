@@ -8,6 +8,28 @@
       "color": "rgba(253, 233, 197, 0.5)"
     },
     {
+      "title": "castor",
+      "tags": ["github", "git", "cli", "golang"],
+      "url": "https://github.com/moondewio/castor",
+      "description": "Review GitHub PRs and go back where you left of",
+      "color": "rgba(137, 224, 81, 0)"
+    },
+    {
+      "title": "webout",
+      "tags": ["terminal", "cli", "golang"],
+      "url": "https://webout.xyz",
+      "repo": "https://github.com/gillchristian/webout",
+      "description": "Pipe terminal output to the browser",
+      "color": "rgba(137, 224, 81, 0)"
+    },
+    {
+      "title": "dir_alias",
+      "tags": ["bash", "zsh"],
+      "url": "https://github.com/moondewio/dir_alias",
+      "description": "Directory based aliases",
+      "color": "rgba(137, 224, 81, 0)"
+    },
+    {
       "title": "chimi",
       "tags": ["markdown", "runner", "javascript", "snippets"],
       "url": "https://github.com/Huemul/chimi",
@@ -21,6 +43,13 @@
       "repo": "https://github.com/gillchristian/scratch",
       "description": "Minimalistic notes app",
       "color": "rgba(53, 108, 93, 0.5)"
+    },
+    {
+      "title": "td",
+      "tags": ["golang", "cli"],
+      "url": "https://github.com/gillchristian/todos",
+      "description": "A to-do's CLI app written in Go",
+      "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "rl",
@@ -55,7 +84,8 @@
       "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
       "url": "https://gillchristian.xyz/tic-tac-toe-glam",
       "repo": "https://github.com/gillchristian/tic-tac-toe",
-      "description": "A comparison between 💅 styled-components and glamorous 💄",
+      "description":
+        "A comparison between 💅 styled-components and glamorous 💄",
       "color": "rgba(204, 58, 75, 0.5)"
     },
     {
@@ -63,7 +93,8 @@
       "tags": ["express", "mongodb", "mongoose", "docker"],
       "url": "https://ndelvalle.github.io/generator-api/",
       "repo": "https://github.com/ndelvalle/generator-api",
-      "description": "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express.",
+      "description":
+        "Yeoman generator for creating RESTful NodeJS APIs, using ES6, Mongoose and Express.",
       "isExternal": true,
       "color": "rgba(21, 153, 87, 0.5)"
     },
@@ -80,7 +111,8 @@
       "title": "itcss starter",
       "tags": ["css", "architecture", "itcss"],
       "repo": "https://github.com/gillchristian/itcss-starter",
-      "description": "Dead simple directories & files structure to organize CSS in a project.",
+      "description":
+        "Dead simple directories & files structure to organize CSS in a project.",
       "color": "rgba(86, 61, 124, 0.5)"
     }
   ],
@@ -102,7 +134,8 @@
         }
       ],
       "color": "rgb(221, 221, 221)"
-    },{
+    },
+    {
       "title": "React, UI con esteroides",
       "event": "Javascript Litoral Meetup",
       "eventUrl": "https://www.meetup.com/js-litoral/events/235803581/",
@@ -127,11 +160,14 @@
         }
       ],
       "color": "rgba(255, 108, 84, 0.5)"
-    },{
+    },
+    {
       "title": "Developing with GIT",
       "event": "CISL 2016 - UTN - Santa Fe",
-      "eventUrl": "http://cisl.org.ar/cronograma/10-cisl2016-dia4-santa-fe-utn#.WBHYlMIrLQo",
-      "description": "Introduction to versioning code with GIT, as part of the \"Introduction to software development\" talk.",
+      "eventUrl":
+        "http://cisl.org.ar/cronograma/10-cisl2016-dia4-santa-fe-utn#.WBHYlMIrLQo",
+      "description":
+        "Introduction to versioning code with GIT, as part of the \"Introduction to software development\" talk.",
       "date": "Oct 2016",
       "links": [
         {
@@ -148,7 +184,8 @@
         }
       ],
       "color": "rgba(34, 186, 217, 0.5)"
-    },{
+    },
+    {
       "title": "JavaScript ES6",
       "event": "Javascript Litoral Meetup",
       "eventUrl": "http://www.meetup.com/js-Litoral/events/230947251/",
@@ -170,7 +207,8 @@
       "title": "Introduction to Angular",
       "event": "Javascript Litoral Meetup",
       "eventUrl": "http://www.meetup.com/js-Litoral/events/229145986/",
-      "description": "Introduction to Angular framework, plus some live examples.",
+      "description":
+        "Introduction to Angular framework, plus some live examples.",
       "date": "March 2016",
       "links": [
         {
