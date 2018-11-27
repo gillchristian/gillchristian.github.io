@@ -11,3 +11,10 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
+
+  medium:
+    build: ./service
+    command: yarn start
+    ports:
+      - "3000:3000"
+    restart: always

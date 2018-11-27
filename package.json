@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
   "dependencies": {
+    "date-fns": "^1.29.0",
     "hack": "^0.5.2",
     "headroom.js": "^0.9.3",
     "trae": "^1.4.2"

@@ -8,3 +8,10 @@ services:
       - ./:/app
     ports:
       - "9000:9000"
+
+  medium:
+    build: ./service
+    command: yarn start
+    ports:
+      - "3000:3000"
+    # restart: always

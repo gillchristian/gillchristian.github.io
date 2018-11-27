@@ -3,6 +3,7 @@ body.hack
   include ../_partials/_header
   //- this is the content section
   main
+    #blog-posts
     div(class="container #{current.source}")
       if current.source === 'index'
         != yield
