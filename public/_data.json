@@ -1,16 +1,23 @@
 {
   "projects": [
     {
+      "title": "safe-redux",
+      "tags": ["redux", "typescript"],
+      "repo": "https://github.com/housinganywhere/safe-redux",
+      "description": "Safely create and handle Redux actions",
+      "color": "rgba(241, 224, 90, 0.5)"
+    },
+    {
       "title": "trae",
       "tags": ["fetch", "http", "api"],
-      "url": "https://github.com/huemul/trae",
+      "repo": "https://github.com/huemul/trae",
       "description": "Fetch based HTTP client for Node & the browser",
       "color": "rgba(253, 233, 197, 0.5)"
     },
     {
       "title": "castor",
       "tags": ["github", "git", "cli", "golang"],
-      "url": "https://github.com/moondewio/castor",
+      "repo": "https://github.com/moondewio/castor",
       "description": "Review GitHub PRs and go back where you left of",
       "color": "rgba(137, 224, 81, 0)"
     },
@@ -25,14 +32,14 @@
     {
       "title": "dir_alias",
       "tags": ["bash", "zsh"],
-      "url": "https://github.com/moondewio/dir_alias",
+      "repo": "https://github.com/moondewio/dir_alias",
       "description": "Directory based aliases",
       "color": "rgba(137, 224, 81, 0)"
     },
     {
       "title": "chimi",
       "tags": ["markdown", "runner", "javascript", "snippets"],
-      "url": "https://github.com/Huemul/chimi",
+      "repo": "https://github.com/Huemul/chimi",
       "description": "Run JavaScript snippets from your markdown files",
       "color": "rgba(241, 224, 90, 0.5)"
     },
@@ -47,21 +54,21 @@
     {
       "title": "td",
       "tags": ["golang", "cli"],
-      "url": "https://github.com/gillchristian/todos",
+      "repo": "https://github.com/gillchristian/todos",
       "description": "A to-do's CLI app written in Go",
       "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "rl",
       "tags": ["golang", "cli"],
-      "url": "https://github.com/gillchristian/rl",
+      "repo": "https://github.com/gillchristian/rl",
       "description": "FIFO reading list CLI tool",
       "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "wallp",
       "tags": ["golang", "cli"],
-      "url": "https://github.com/gillchristian/wallp",
+      "repo": "https://github.com/gillchristian/wallp",
       "description": "A golang CLI app to change the desktop wallpaper",
       "color": "rgba(55, 94, 171, 0.5)"
     },
@@ -75,7 +82,7 @@
     {
       "title": "wkon",
       "tags": ["bash", "terminal"],
-      "url": "https://github.com/gillchristian/wkon",
+      "repo": "https://github.com/gillchristian/wkon",
       "description": "Notes on your terminal, per directory",
       "color": "rgba(137, 224, 81, 0.5)"
     },
