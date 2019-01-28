@@ -6,10 +6,10 @@ Since I am quite happy with this PoC I decied to commit to the project and work
 on developing a real useful version.
 
 I plan to share my experiece in this devlog because I want to keep track of how
-the project evolves and what I learn and the things I discover along the way.
-Also, I guess it will be interesting and useful to others too. To get started I
-think it makes sense to share how I came up with this idea, what I’ve done
-already and what is ahead.
+the project evolves, what I learn and the things I discover along the way. Also,
+I guess it will be interesting and useful to others too. To get started I think
+it makes sense to share how I came up with this idea, what I’ve done already and
+what is ahead.
 
 <p>
 <div class="centered">
