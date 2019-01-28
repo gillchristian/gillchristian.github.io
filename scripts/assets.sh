@@ -4,7 +4,7 @@ NM=node_modules
 PUBLIC_STYLE=public/assets/style;
 HL_FILE=agate;
 
-mkdir ${PUBLIC_STYLE}/libs;
+mkdir -p ${PUBLIC_STYLE}/libs;
 
 rm -fr ${PUBLIC_STYLE}/libs/hack;
 

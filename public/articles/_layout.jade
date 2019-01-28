@@ -2,6 +2,8 @@ include ../_partials/_head
 body.hack
   include ../_partials/_header
   //- this is the content section
+  br
+  br
   main
     div(class="container #{current.source}")
       if current.source === 'index'
@@ -15,6 +17,4 @@ body.hack
           != yield
           include ../_partials/_author
           include ../_partials/_prev-next
-          if public.articles._data[current.source].discuss
-            include ../_partials/_comments
   include ../_partials/_footer

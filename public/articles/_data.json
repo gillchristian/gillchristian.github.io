@@ -1,4 +1,12 @@
 {
+  "ts-earch-devlog-crazy-idea": {
+    "title": "A crazy idea, a proof of concept and many open questions",
+    "article_id": 3000,
+    "excerpt":
+      "How I came up the idea of building a TypeScript search tool and what's next.",
+    "date": "January 21st 2010",
+    "discuss": true
+  },
   "trae": {
     "title": "Trae, another HTTP library",
     "article_id": 3000,
@@ -9,7 +17,8 @@
   "smalltalk-tdd": {
     "title": "Test unitarios en Smalltalk con Pharo y SUnit",
     "article_id": 2000,
-    "excerpt": "[SPANISH] Cómo agregar tests unitarios para Smalltalk en Pharo utilizando SUnit.",
+    "excerpt":
+      "[SPANISH] Cómo agregar tests unitarios para Smalltalk en Pharo utilizando SUnit.",
     "date": "October 4th 2016",
     "discuss": true
   }
