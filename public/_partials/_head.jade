@@ -14,6 +14,10 @@ html
       meta(property='og:description', content='#{excerpt}')
       meta(property='og:type', content='article')
       meta(property='og:image', content='#{article_url}')
+      meta(property='og:url', content='#{public._data.uri + "/" + current.path.join("/")}')
+      meta(name='twitter:card', content="summary")
+      meta(name='twitter:site', content="@gillchristian")
+      meta(name='twitter:creator', content="@gillchristian")
     //- CSS & Fonts
     link(rel='stylesheet', href='/assets/style/libs/hack/dist/hack.css')
     link(rel='stylesheet', href='/assets/style/style.css')
