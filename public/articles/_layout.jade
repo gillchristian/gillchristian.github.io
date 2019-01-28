@@ -2,13 +2,13 @@ include ../_partials/_head
 body.hack
   include ../_partials/_header
   //- this is the content section
-  br
-  br
   main
     div(class="container #{current.source}")
       if current.source === 'index'
         != yield
       else
+        br
+        br
         h1= title
         p
           i.fa.fa-clock-o
