@@ -126,7 +126,7 @@ Stay tunned for more updates =D
 
 ---
 
-**P.S.**: for the next devlop I will either update my website to allow
+**P.S.**: for the next devlog I will either update my website to allow
 commenting and sharing or give up and publish on Medium.
 
 ---
