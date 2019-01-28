@@ -1,18 +1,21 @@
 {
   "ts-earch-devlog-crazy-idea": {
-    "title": "A crazy idea, a proof of concept and many open questions",
+    "title": "ts-earch devlog: A crazy idea and a proof of concept",
     "article_id": 3000,
     "excerpt":
       "How I came up the idea of building a TypeScript search tool and what's next.",
     "date": "January 21st 2010",
-    "discuss": true
+    "discuss": true,
+    "article_url": "https://i.imgur.com/MGsrYzU.jpg"
   },
   "trae": {
     "title": "Trae, another HTTP library",
     "article_id": 3000,
     "excerpt": "Why we built our own fetch based HTTP library.",
     "date": "February 3th 2017",
-    "discuss": false
+    "discuss": false,
+    "article_url":
+      "https://cdn-images-1.medium.com/max/800/1*0R3BjrbWLDfyhsdmu_PnpQ.jpeg"
   },
   "smalltalk-tdd": {
     "title": "Test unitarios en Smalltalk con Pharo y SUnit",
@@ -20,6 +23,8 @@
     "excerpt":
       "[SPANISH] Cómo agregar tests unitarios para Smalltalk en Pharo utilizando SUnit.",
     "date": "October 4th 2016",
-    "discuss": true
+    "discuss": true,
+    "article_url":
+      "http://pharo.gforge.inria.fr/PBE1/SUnit/figures/sunit-classes.png"
   }
 }

@@ -9,13 +9,18 @@ html
     meta(name='keywords', content='web-developer, developer, javascript, html, angular, react, node')
     meta(name='author', content='gillchristian')
     link(rel='shortcut icon', href='/images/favicon.ico')
+    if (current.source !== 'index' && current.path[0] === 'articles')
+      meta(property='og:title', content='#{title}')
+      meta(property='og:description', content='#{excerpt}')
+      meta(property='og:type', content='article')
+      meta(property='og:image', content='#{article_url}')
     //- CSS & Fonts
     link(rel='stylesheet', href='/assets/style/libs/hack/dist/hack.css')
     link(rel='stylesheet', href='/assets/style/style.css')
     link(
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", 
-      rel="stylesheet", 
-      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", 
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
+      rel="stylesheet",
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1",
       crossorigin="anonymous"
     )
 

@@ -11,6 +11,13 @@ Also, I guess it will be interesting and useful to others too. To get started I
 think it makes sense to share how I came up with this idea, what I’ve done
 already and what is ahead.
 
+<p>
+<div class="centered">
+  ![Crazy idea](https://i.imgur.com/dFJAhnT.jpg)
+  <i class="epilogue">A crazy idea.</i>
+</div>
+</p>
+
 ## The crazy idea
 
 I have been learning about functional programming for a while now. I started
@@ -62,7 +69,7 @@ documentation is very basic.
 
 By the way, I should give credit for the name, `ts-earch`, to Franco.
 
-## The open questions
+## Open questions
 
 Developing the PoC convinced me that it is an idea worth to work on. But, to be
 honest, it also left me more questions than answers.
@@ -98,6 +105,13 @@ though the type matches implicitly. How to solve that, I have no idea yet.
 
 These are a few of the open questions I have that I will have to solve. And I am
 sure there will be more questions along the way.
+
+<p>
+<div class="centered">
+  ![The road ahead](https://i.imgur.com/MGsrYzU.jpg)
+  <i class="epilogue">The road ahead, definitely not a clear path.</i>
+</div>
+</p>
 
 ## One step at a time
 

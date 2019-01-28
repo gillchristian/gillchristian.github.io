@@ -44,3 +44,14 @@
     padding-top: 1rem;
   }
 }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.epilogue {
+  margin-top: 5px;
+}
