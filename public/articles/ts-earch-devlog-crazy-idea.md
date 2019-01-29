@@ -5,7 +5,7 @@ functions and methods by their type signature.
 Since I am quite happy with this PoC I decided to commit to the project and work
 on developing a real useful version.
 
-I plan to share my experiece in this devlog because I want to keep track of how
+I plan to share my experience in this devlog because I want to keep track of how
 the project evolves, what I learn and the things I discover along the way. Also,
 I guess it will be interesting and useful to others too. To get started I think
 it makes sense to share how I came up with this idea, what I’ve done already and
@@ -96,7 +96,7 @@ interface Person {
 const getName = (p: Person) => p.name
 ```
 
-Searching for `(x: { name: string }) => string` should retun `getName` even
+Searching for `(x: { name: string }) => string` should return `getName` even
 though the type matches implicitly. How to solve that, I have no idea yet.
 
 - What is the best way to index the types for searching them?
