@@ -2,7 +2,7 @@ In December last year I created the proof of concept (PoC) for an idea I have
 that seems a bit crazy, at least to me now. It’s a tool to search TypeScript
 functions and methods by their type signature.
 
-Since I am quite happy with this PoC I decied to commit to the project and work
+Since I am quite happy with this PoC I decided to commit to the project and work
 on developing a real useful version.
 
 I plan to share my experiece in this devlog because I want to keep track of how
@@ -39,7 +39,7 @@ will work with each other.
 
 Hoogle turned out to be a really useful tool during development. Which begged
 the question, why isn’t there such thing for TypeScript? I work with TypeScript
-on a daily basis and I think it would be a really good addition to the avaliable
+on a daily basis and I think it would be a really good addition to the available
 tools.
 
 The closest thing I found is [Open Symbol by name][5] in VS Code.
@@ -47,12 +47,11 @@ The closest thing I found is [Open Symbol by name][5] in VS Code.
 ## The proof of concept
 
 I shared the idea with my friend [Franco][6], who is much more pragmatic than I
-am, and he told my “Why don’t you build a proof of concept and see if it makes
-sense?”.
+am, and he told my “Why don’t you build a PoC and see if it makes sense?”.
 
-As a good proof of concept it had to be as simple as possible. A way to extract
-the type signatures from all the exported functions in a local directory and
-search them trough a simple UI.
+As a good PoC it had to be as simple as possible. A way to extract the type
+signatures from all the exported functions in a local directory and search them
+through a simple UI.
 
 You can find it [here][7]. For now there is not much you can do with it and
 documentation is very basic.
@@ -71,8 +70,8 @@ By the way, I should give credit for the name, `ts-earch`, to Franco.
 
 ## Open questions
 
-Developing the PoC convinced me that it is an idea worth to work on. But, to be
-honest, it also left me more questions than answers.
+Developing the PoC convinced me that it is an idea worth working on. But, to be
+honest, it also left me with more questions than answers.
 
 - Should I use actual TypeScript type signatures for search? Or should I come up
   with a simpler DSL? In Haskell that is not so much of a problem. Let’s compare
@@ -115,14 +114,14 @@ sure there will be more questions along the way.
 
 ## One step at a time
 
-To get started it makes sense to have something that people can use and
-experient with. My short term goal is to adjust a few things and deploy
-`ts-earch` with all the [DefinitelyTyped][8] packages avaliable for search.
+To get started it makes sense to have something that people can use and play
+around with. My short term goal is to adjust a few things and deploy `ts-earch`
+with all the [DefinitelyTyped][8] packages available for search.
 
 If you have any questions, suggestions or would like to collaborate on the
-projec feel free to [reach out to me on Twitter][9].
+project feel free to [reach out to me on Twitter][9].
 
-Stay tunned for more updates =D
+Stay tuned for more updates =D
 
 ---
 
