@@ -2,6 +2,7 @@ import 'whatwg-fetch'
 import { initHighlightingOnLoad } from 'highlight.js'
 
 import 'enhacers/header'
+import { fetchDevToArticles } from 'enhacers/articles'
 
 import { loadMarkdown } from 'lib/markdown'
 import { readOrReject } from 'lib/fetch'
@@ -12,23 +13,25 @@ initHighlightingOnLoad()
 
 // --- load content ------------------------------------------------------------
 
+fetchDevToArticles('articles')
+
 loadMarkdown(
   'reading-content',
   'https://raw.githubusercontent.com/gillchristian/goals/master/content-list/books.md',
   md => {
     const [, ...tail] = md.split('\n')
     return tail.join('\n')
-  }
+  },
 )
 
 loadMarkdown(
   'musts-content',
-  'https://raw.githubusercontent.com/gillchristian/raws/master/musts.md'
+  'https://raw.githubusercontent.com/gillchristian/raws/master/musts.md',
 )
 
 loadMarkdown(
   'dev-resources',
-  'https://raw.githubusercontent.com/gillchristian/dev-resources/master/README.md'
+  'https://raw.githubusercontent.com/gillchristian/dev-resources/master/README.md',
 )
 
 // --- home background switcher ------------------------------------------------

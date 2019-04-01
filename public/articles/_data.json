@@ -1,13 +1,4 @@
 {
-  "ts-earch-devlog-crazy-idea": {
-    "title": "ts-earch devlog: A crazy idea and a proof of concept",
-    "article_id": 3000,
-    "excerpt":
-      "How I came up the idea of building a TypeScript search tool and what's next.",
-    "date": "January 29th 2019",
-    "discuss": true,
-    "article_url": "https://i.imgur.com/MGsrYzU.jpg"
-  },
   "trae": {
     "title": "Trae, another HTTP library",
     "article_id": 3000,

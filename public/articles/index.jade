@@ -7,6 +7,11 @@ blockquote
 
 h1 articles
 
+#articles.md-page--loading
+  span loading dev.to articles
+  br
+  .loading
+
 if JSON.stringify(public.articles._data) === JSON.stringify({})
   .alert.alert-success
     | ¯\_(ツ)_/¯
@@ -14,6 +19,6 @@ if JSON.stringify(public.articles._data) === JSON.stringify({})
     | ¯\_(ツ)_/¯
 else
   - each article, slug in public.articles._data
-    h2
+    h2.m-b-0
       a(href="/articles/#{ slug }")= article.title
-    p= article.excerpt
+    p.m-t-10.m-b-40= article.excerpt
