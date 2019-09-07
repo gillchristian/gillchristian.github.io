@@ -2,10 +2,41 @@
   "uri": "https://gillchristian.xyz",
   "projects": [
     {
-      "title": "safe-redux",
+      "title": "tsearch.io",
+      "tags": ["typescript", "dev tools"],
+      "repo": "https://github.com/gillchristian/ts-earch",
+      "url": "https://tsearch.io",
+      "description": "Search TypeScript functions and methods by types",
+      "color": "rgba(241, 224, 90, 0.5)"
+    },
+    {
+      "title": "literate-avocado",
+      "tags": ["elm", "productivity", "GitHub"],
+      "repo": "https://github.com/gillchristian/literate-avocado",
+      "url": "https://gillchristian.github.io/literate-avocado/",
+      "description": "A GitHub Gist explorer app",
+      "color": "rgba(241, 224, 90, 0.5)"
+    },
+    {
+      "title": "remote-data-ts",
+      "tags": ["typescript"],
+      "repo": "https://github.com/gillchristian/remote-data-ts",
+      "description":
+        "Types and utilities to represent the states of fetched data",
+      "color": "rgba(241, 224, 90, 0.5)"
+    },
+    {
+      "title": "@housinganywhere/safe-redux",
       "tags": ["redux", "typescript"],
       "repo": "https://github.com/housinganywhere/safe-redux",
       "description": "Safely create and handle Redux actions",
+      "color": "rgba(241, 224, 90, 0.5)"
+    },
+    {
+      "title": "@housinganywhere/match",
+      "tags": ["typescript"],
+      "repo": "https://github.com/housinganywhere/match",
+      "description": "poor man's pattern matching",
       "color": "rgba(241, 224, 90, 0.5)"
     },
     {
@@ -88,6 +119,13 @@
       "color": "rgba(137, 224, 81, 0.5)"
     },
     {
+      "title": "repl-ramda",
+      "tags": ["node", "ramda", "repl", "dev tools"],
+      "repo": "https://github.com/gillchristian/repl-ramda",
+      "description": "Node repl with Ramda included",
+      "color": "rgba(137, 224, 81, 0.5)"
+    },
+    {
       "title": "tic-tac-toe",
       "tags": ["CSS-in-JS", "glamorous", "styled-components", "react"],
       "url": "https://gillchristian.xyz/tic-tac-toe-glam",
@@ -125,6 +163,20 @@
     }
   ],
   "talks": [
+    {
+      "title": "FP For The People (v2)",
+      "event": "OdessaJS",
+      "eventUrl": "http://odessajs.org/",
+      "description": "Core principles of FP and why to use it on JS",
+      "date": "July 2019",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=0GDkkun8jDQ&t=3s",
+          "label": "Stream"
+        }
+      ],
+      "color": "rgb(221, 221, 221)"
+    },
     {
       "title": "FP for the People",
       "event": "Javascript Litoral Meetup",
