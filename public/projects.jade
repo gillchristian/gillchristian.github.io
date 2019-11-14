@@ -13,15 +13,12 @@ h1 OpenSource Projects
 div
   - each project in public._data.projects
     .project
-      div
-        span.project--title= project.title.toUpperCase()
-        span.project--description
-          if project.isExternal
-            span (
+      div.project--title= project.title
+        if project.isExternal
+          span.project--contributor
             strong
-              i contributor
-            span )
-        span.project--description= project.description
+              i (contributor)
+      div.project--description= project.description
       .project--block
         | #{'[ '}
         span

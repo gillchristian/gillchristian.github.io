@@ -12,14 +12,13 @@ div
   - each talk in public._data.talks
     .project
       div
-        span.project--title= talk.title.toUpperCase()
-        span= ' - '
-        span.project--description
+        div.project--title= talk.title.toUpperCase()
+        div.project--description
           a(href="#{talk.eventUrl}", target="_blank", rel="noopener noreferrer")= talk.event
-        span= ' - '
-        span.project--description
-          i.fa.fa-clock-o
-          | #{' ' + talk.date}
+          span= ' - '
+          span
+            i.fa.fa-clock-o
+            | #{' ' + talk.date}
       .project--block= talk.description
       .project--block
         - each link, index in talk.links

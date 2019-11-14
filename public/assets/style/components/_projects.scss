@@ -7,11 +7,16 @@
   font-size: 20px;
 }
 
+.project--description a {
+  border-bottom: none;
+}
+
 .project--description {
+  margin-top: 10px;
+}
+
+.project--contributor {
   margin-left: 5px;
-  a {
-    border-bottom: none;
-  }
 }
 
 .project--block {

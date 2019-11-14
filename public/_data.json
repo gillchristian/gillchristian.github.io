@@ -47,10 +47,24 @@
       "color": "rgba(253, 233, 197, 0.5)"
     },
     {
+      "title": "td",
+      "tags": ["haskell", "cli"],
+      "repo": "https://github.com/gillchristian/todos",
+      "description": "to-do's CLI app",
+      "color": "rgba(55, 94, 171, 0.5)"
+    },
+    {
       "title": "castor",
       "tags": ["github", "git", "cli", "golang"],
       "repo": "https://github.com/moondewio/castor",
       "description": "Review GitHub PRs and go back where you left of",
+      "color": "rgba(137, 224, 81, 0)"
+    },
+    {
+      "title": "dir_alias",
+      "tags": ["bash", "zsh"],
+      "repo": "https://github.com/moondewio/dir_alias",
+      "description": "Directory based aliases",
       "color": "rgba(137, 224, 81, 0)"
     },
     {
@@ -59,13 +73,6 @@
       "url": "https://webout.xyz",
       "repo": "https://github.com/gillchristian/webout",
       "description": "Pipe terminal output to the browser",
-      "color": "rgba(137, 224, 81, 0)"
-    },
-    {
-      "title": "dir_alias",
-      "tags": ["bash", "zsh"],
-      "repo": "https://github.com/moondewio/dir_alias",
-      "description": "Directory based aliases",
       "color": "rgba(137, 224, 81, 0)"
     },
     {
@@ -82,13 +89,6 @@
       "repo": "https://github.com/gillchristian/scratch",
       "description": "Minimalistic notes app",
       "color": "rgba(53, 108, 93, 0.5)"
-    },
-    {
-      "title": "td",
-      "tags": ["golang", "cli"],
-      "repo": "https://github.com/gillchristian/todos",
-      "description": "A to-do's CLI app written in Go",
-      "color": "rgba(55, 94, 171, 0.5)"
     },
     {
       "title": "rl",
@@ -173,6 +173,14 @@
         {
           "url": "https://www.youtube.com/watch?v=0GDkkun8jDQ&t=3s",
           "label": "Stream"
+        },
+        {
+          "url": "https://fp-for-the-people-light.gillchristian.now.sh/",
+          "label": "Slides (updated)"
+        },
+        {
+          "url": "https://github.com/gillchristian/fp-for-the-people-v2",
+          "label": "Slides (repo)"
         }
       ],
       "color": "rgb(221, 221, 221)"
