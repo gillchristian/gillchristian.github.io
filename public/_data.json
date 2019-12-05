@@ -164,6 +164,29 @@
   ],
   "talks": [
     {
+      "title": "Modeling your way to consistency",
+      "event": "dotJS",
+      "eventUrl": "https://dotjs.io",
+      "description":
+        "How domain modeling can help us to make our apps consistent & safe",
+      "date": "December 2019",
+      "links": [
+        {
+          "url": "",
+          "label": "Stream"
+        },
+        {
+          "url": "https://bit.ly/dotjs-modeling",
+          "label": "Slides"
+        },
+        {
+          "url": "https://github.com/gillchristian/modeling",
+          "label": "Slides (repo)"
+        }
+      ],
+      "color": "rgb(221, 221, 221)"
+    },
+    {
       "title": "FP For The People (v2)",
       "event": "OdessaJS",
       "eventUrl": "http://odessajs.org/",
