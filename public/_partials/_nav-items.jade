@@ -1,9 +1,0 @@
-- function activeClass(condition) {
--   return condition ? 'active' : ''
-- }
-
-.nav-items
-  a(href='/about-me', class="#{ activeClass(current.source === 'about-me') }") about-me
-  a(href='/projects', class="#{ activeClass(current.source === 'projects') }") projects
-  a(href='/talks', class="#{ activeClass(current.source === 'talks') }") talks
-  a(href='/articles', class="#{ activeClass( current.source === 'articles' || current.path.indexOf('articles') > -1 ) }") articles

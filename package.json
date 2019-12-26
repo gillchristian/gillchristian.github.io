@@ -1,73 +1,28 @@
 {
-  "name": "gillchristian.github.io",
-  "version": "0.1.0",
-  "description": "gillchristian personal site",
-  "main": "index.js",
+  "name": "with-reasonml",
+  "version": "1.0.0",
   "scripts": {
-    "js:watch": "webpack -w",
-    "js:build": "NODE_ENV=production webpack",
-    "start": "./scripts/start.prod.sh",
-    "dev": "./scripts/start.dev.sh",
-    "move:assets": "./scripts/assets.sh",
-    "format": "prettier --write '**/*.{js,md,scss,css}'",
-    "format:changed": "pretty-quick",
-    "precommit": "pretty-quick --staged"
+    "dev": "concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
+    "dev:reason": "bsb -clean-world -make-world -w",
+    "dev:next": "next dev",
+    "build": "bsb -clean-world -make-world && next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gillchristian/gillchristian.github.io.git"
-  },
-  "keywords": [
-    "personal-site",
-    "developer",
-    "blog",
-    "js",
-    "full-stack"
-  ],
-  "author": "gillchristian",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gillchristian/gillchristian.github.io/issues"
-  },
-  "homepage": "https://github.com/gillchristian/gillchristian.github.io#readme",
   "dependencies": {
-    "hack": "^0.5.2",
-    "headroom.js": "^0.9.3",
-    "trae": "^1.4.2"
+    "@glennsl/bs-json": "^5.0.1",
+    "babel-plugin-bucklescript": "^0.5.3",
+    "bs-fetch": "^0.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "latest",
+    "next-transpile-modules": "2.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reason-react": "^0.7.0"
   },
   "devDependencies": {
-    "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.5",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "highlight.js": "^9.7.0",
-    "husky": "^0.14.3",
-    "markdown": "^0.5.0",
-    "nodemon": "^1.17.5",
-    "prettier": "^1.13.7",
-    "pretty-quick": "^1.6.0",
-    "webpack": "^2.1.0-beta.25",
-    "whatwg-fetch": "^1.0.0",
-    "xo": "^0.16.0"
-  },
-  "xo": {
-    "esnext": true,
-    "space": true,
-    "semicolon": false,
-    "globals": [
-      "document",
-      "fetch"
-    ],
-    "rules": {
-      "import/no-extraneous-dependencies": 0,
-      "comma-dangle": [
-        "error",
-        "always-multiline"
-      ]
-    },
-    "ignores": [
-      "public/assets/js"
-    ]
+    "@babel/core": "^7.4.3",
+    "bs-platform": "5.0.3",
+    "concurrently": "^4.1.0"
   }
 }

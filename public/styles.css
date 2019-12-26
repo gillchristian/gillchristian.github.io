@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+} 
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+blockquote {
+  background-color: #fafafa;
+  border-left: 5px solid #9a9a9a;
+  padding: 15px 20px;
+  margin: 10px 0;
+}
+
+h1, h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a, a:visited {
+  color: #e57a5a;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #5dbcd2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sticky footer layout */
+
+.Site {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+/* Home page */
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-title {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.home-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: #e57a5a;
+}
+
+.home-logo {
+  display: flex;
+  align-items: center;
+}
+
+.home-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about-job {
+  margin-bottom: 40px;
+}
+
+.about-job-company {
+  font-size: 1.2rem;
+}
+
+/* Header */
+.header-link {
+  margin-right: 15px;
+}
+
+.header-active {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-cr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+/* Social */
+.social-link {
+  margin-right: 15px;
+}
+
+/* Article */
+.article {
+  margin-bottom: 40px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.article-interactions {
+  margin-right: 10px;
+}
+
+/* Nav */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px soolid #eaeaea;
+}
+
+.nav-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: #e57a5a;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 519px) {
+  .nav-logo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Project */
+.project {
+  margin-bottom: 40px;
+} 
+
+.project-title {
+  font-size: 1.1rem;
+}
+
+/* Talk */
+.talk {
+  margin-bottom: 40px;
+}
+
+.talk-title {
+  font-size: 1.1rem;
+}
