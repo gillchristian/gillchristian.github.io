@@ -1,12 +1,12 @@
-import App from "next/app"
-import Head from "next/head"
-import React from "react"
+import App from 'next/app'
+import Head from 'next/head'
+import React from 'react'
 
 const names = {
-  "/articles": "Articles | Christian Gill",
-  "/about": "About | Christian Gill",
-  "/talks": "Talks | Christian Gill",
-  "/projects": "Projects | Christian Gill",
+  '/articles': 'Articles | Christian Gill',
+  '/about': 'About | Christian Gill',
+  '/talks': 'Talks | Christian Gill',
+  '/projects': 'Projects | Christian Gill',
 }
 
 const pageTitle = (route) => {
@@ -14,7 +14,7 @@ const pageTitle = (route) => {
     route.startsWith(path),
   )
 
-  const [, title] = maybeMatch || ["/", "Christian Gill"]
+  const [, title] = maybeMatch || ['/', 'Christian Gill']
 
   return title
 }

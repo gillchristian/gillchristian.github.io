@@ -1,7 +1,6 @@
-const withTM = require("next-transpile-modules")
+const withTM = require('next-transpile-modules')
 
-module.exports =
-  withTM({
-    pageExtensions: ["jsx", "js", "bs.js"],
-    transpileModules: ["bs-platform"],
-  })
+module.exports = withTM({
+  pageExtensions: ['jsx', 'js', 'bs.js'],
+  transpileModules: ['bs-platform'],
+})
