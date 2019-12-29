@@ -1,15 +1,19 @@
 module Link = {
   [@react.component]
-  let make = (~href, ~children) => {
+  let make = (~href, ~className=?, ~children) => {
     let pathname = switch(Next.Router.useRouter()) {
     | Some(router) => router##pathname
     | None => "/"
     };
 
     pathname == href
-      ? <span className="header-active"> children </span>
+      ? <span className=Style.cx([Some("header-active"), className])>
+          children
+        </span>
       : <Next.Link href=href>
-          <a className="header-link"> children </a>
+          <a className=Style.cx([Some("header-link"), className])>
+            children
+          </a>
         </Next.Link>;
   };
 
