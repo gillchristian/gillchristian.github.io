@@ -7,7 +7,7 @@ let talks: list(Talk.talk) = [
       date: "December 2019",
       links: [
         {
-          url: "",
+          url: "https://www.dotconferences.com/2019/12/christian-gill-modeling-your-way-to-consistency",
           label: "Stream"
         },
         {
