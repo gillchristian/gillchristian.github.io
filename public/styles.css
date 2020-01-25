@@ -207,3 +207,15 @@ a:focus, a:hover {
 .talk-title {
   font-size: 1.1rem;
 }
+
+/* Tsearch articles */
+.tsearch-title {
+  display: flex;
+  align-items: center;
+}
+
+.tsearch-logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}

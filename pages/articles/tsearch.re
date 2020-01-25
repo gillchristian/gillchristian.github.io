@@ -27,7 +27,11 @@ let make = () => {
     <Nav />
 
     <div className="Site-content">
-      <h1> {ReasonReact.string("Tsearch Blog")} </h1>
+      <h1 className="tsearch-title">
+        {ReasonReact.string("Tsearch Blog")}
+
+        <img src="/tsearch-logo.png" className="tsearch-logo" alt="Tsearch" />
+     </h1>
 
       <p>
         <a href="https://tsearch.io"> {ReasonReact.string("Tsearch")} </a>
