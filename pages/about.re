@@ -11,8 +11,8 @@ let make = () => {
           {ReasonReact.string("Entre Rios, Argentina")}
         </a>
         {ReasonReact.string(" now living in ")}
-        <a href="https://en.wikipedia.org/wiki/Rotterdam" target="_blank" rel="noopener noreferrer">
-          {ReasonReact.string("Rotterdam, The Netherlands")}
+        <a href="https://en.wikipedia.org/wiki/Amsterdam" target="_blank" rel="noopener noreferrer">
+          {ReasonReact.string("Amsterdam, The Netherlands")}
         </a>
         {ReasonReact.string(".")}
       </p>
@@ -56,7 +56,7 @@ let make = () => {
         </p>
 
         <small>
-          <Tags tags=["TypeScript", "React", "Node", "Docker", "Kubernetes", "CI/CD" ] />
+          <Tags tags=["TypeScript", "fp-ts", "React", "Node", "Docker", "Kubernetes", "CI/CD" ] />
         </small>
       </div>
 
@@ -92,7 +92,7 @@ let make = () => {
         </p>
 
         <p>
-          {ReasonReact.string("Worked with really smart and awesome people developing awesomely challenging applications and APIs.")}
+          {ReasonReact.string("Worked with really smart and cool people developing awesomely challenging applications and APIs.")}
         </p>
 
         <small>

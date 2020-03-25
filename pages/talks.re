@@ -28,7 +28,7 @@ let talks: list(Talk.talk) = [
       date: "July 2019",
       links: [
         {
-          url: "https://www.youtube.com/watch?v=0GDkkun8jDQ&t=3s",
+          url: "https://www.youtube.com/watch?v=0GDkkun8jDQ",
           label: "Stream"
         },
         {

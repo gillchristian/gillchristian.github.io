@@ -24,6 +24,14 @@ let projects: list(Project.project) = [
       isExternal: false
     },
     {
+      title: "trae",
+      tags: ["fetch", "http", "api"],
+      repo: "https://github.com/huemul/trae",
+      url: None,
+      description: {js|Fetch based HTTP client for Node & the browser|js},
+      isExternal: false
+    },
+    {
       title: "@housinganywhere/safe-redux",
       tags: ["typescript", "redux"],
       repo: "https://github.com/housinganywhere/safe-redux",
@@ -40,19 +48,11 @@ let projects: list(Project.project) = [
       isExternal: false
     },
     {
-      title: "trae",
-      tags: ["fetch", "http", "api"],
-      repo: "https://github.com/huemul/trae",
-      url: None,
-      description: {js|Fetch based HTTP client for Node & the browser|js},
-      isExternal: false
-    },
-    {
-      title: "td",
+      title: "todos",
       tags: ["haskell", "cli", "productivity"],
       repo: "https://github.com/gillchristian/todos",
       url: None,
-      description: {js|to-do's CLI app|js},
+      description: {js|A CLI app for managing daily to do's|js},
       isExternal: false
     },
     {
