@@ -1,12 +1,9 @@
 type article = {
   id: int,
   title: string,
-  description: string,
   date: string,
   tags: list(string),
   url: string,
-  comments: int,
-  reactions: int,
 };
 
 module Decode = {
@@ -15,12 +12,9 @@ module Decode = {
   let article = json => {
     id: json |> field("id", int),
     title: json |> field("title", string),
-    description: json |> field("description", string),
     date: json |> field("readable_publish_date", string),
     tags: json |> field("tag_list", list(string)),
     url: json |> field("url", string),
-    comments: json |> field("comments_count", int),
-    reactions: json |> field("positive_reactions_count", int),
   };
 
   let articles = list(article);
