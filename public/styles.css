@@ -143,6 +143,10 @@ a:focus, a:hover {
   margin-right: 15px;
 }
 
+.social-link:last-child {
+  margin-right: 0;
+}
+
 /* Article */
 .article {
   margin-bottom: 5px;
