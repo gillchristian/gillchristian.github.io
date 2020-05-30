@@ -27,7 +27,7 @@ let make = () => {
 
     <Link href="/talks"> {ReasonReact.string("Talks")} </Link>
 
-    <Link href="/articles"> {ReasonReact.string("Articles")} </Link>
+    <Link href="/articles"> {ReasonReact.string("Writing")} </Link>
 
     <Link href="/about"> {ReasonReact.string("About")} </Link>
   </div>;

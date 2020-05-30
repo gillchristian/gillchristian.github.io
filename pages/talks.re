@@ -1,9 +1,26 @@
 let talks: list(Talk.talk) = [
     {
       title: "Modeling your way to consistency",
+      event: "Frontend at Catawiki",
+      eventUrl: "https://www.meetup.com/javascript-workshops-amsterdam/events/270592994/",
+      description: "How domain modeling can help us to make our apps consistent & safe",
+      date: "May 2020",
+      links: [
+        {
+          url: "https://modeling-ts.now.sh",
+          label: "Slides"
+        },
+        {
+          url: "https://github.com/gillchristian/modeling-talk",
+          label: "Slides (repo)"
+        }
+      ]
+    },
+    {
+      title: "Modeling your way to consistency",
       event: "dotJS",
       eventUrl: "https://dotjs.io",
-      description: "How domain modeling can help us to make our apps consistent & safe",
+      description: "(lightning talk) How domain modeling can help us to make our apps consistent & safe",
       date: "December 2019",
       links: [
         {
@@ -15,7 +32,7 @@ let talks: list(Talk.talk) = [
           label: "Slides"
         },
         {
-          url: "https://github.com/gillchristian/modeling",
+          url: "https://github.com/gillchristian/modeling-lightning",
           label: "Slides (repo)"
         }
       ]

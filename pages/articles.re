@@ -34,7 +34,7 @@ let make = () => {
         <p> <i> {ReasonReact.string("Richard Hamming.")} </i> </p>
       </blockquote>
 
-      <h1> {ReasonReact.string("Articles")} </h1>
+      <h1> {ReasonReact.string("Writings")} </h1>
 
       {switch(articles) {
       | RemoteData.NotAsked => <span> {ReasonReact.string("loading ...")} </span>

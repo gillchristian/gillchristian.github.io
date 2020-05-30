@@ -107,6 +107,10 @@ a:focus, a:hover {
   margin-right: 15px;
 }
 
+.header-link:last-child {
+  margin-right: 0;
+}
+
 .header-active {
   margin-right: 15px;
   font-weight: bold;
