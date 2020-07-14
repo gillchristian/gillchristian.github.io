@@ -103,6 +103,12 @@ a:focus, a:hover {
 }
 
 /* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header-link {
   margin-right: 15px;
 }
@@ -213,6 +219,46 @@ a:focus, a:hover {
 }
 
 .talk-title {
+  font-size: 1.1rem;
+}
+
+/* Stream */
+.events-title {
+  margin-bottom: 10px;
+}
+.events-title-stream {
+  margin-top: 10px;
+}
+
+.events-list {
+}
+
+.event {
+  padding: 20px;
+  border: 1px solid #9a9a9a;
+  margin-bottom: 20px;
+
+  width: 100%;
+  max-width: 648px;
+}
+
+.event.next {
+  border-width: 5px;
+}
+.event.future {
+  border-width: 2px;
+}
+.event.past * {
+  color: #808080;
+}
+
+.event-title {
+  font-size: 1.6rem;
+}
+.event-date {
+  font-size: 1.3rem;
+}
+.event-description {
   font-size: 1.1rem;
 }
 

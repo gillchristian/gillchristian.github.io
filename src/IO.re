@@ -1,3 +1,5 @@
+[%raw "require('isomorphic-fetch')"];
+
 type article = {
   id: int,
   title: string,
@@ -10,14 +12,36 @@ module Decode = {
   open Json.Decode;
 
   let article = json => {
-    id: json |> field("id", int),
-    title: json |> field("title", string),
-    date: json |> field("readable_publish_date", string),
-    tags: json |> field("tag_list", list(string)),
-    url: json |> field("url", string),
+    id: field("id", int, json),
+    title: field("title", string, json),
+    date: field("readable_publish_date", string, json),
+    tags: field("tag_list", list(string), json),
+    url: field("url", string, json),
   };
 
   let articles = list(article);
+
+  let topic = json => (
+    field("topic_label", string, json),
+    optional(field("topic_url", string), json),
+  );
+
+  let pastEvent = json: Events.pastEvent => {
+    date: field("date", string, json),
+    topic: topic(json),
+    description: optional(field("description", string), json),
+  };
+
+  let futureEvent = json: Events.futureEvent => {
+    date: field("date", string, json),
+    topic: optional(topic, json),
+    description: optional(field("description", string), json),
+  };
+
+  let events = json => (
+    field("past", list(pastEvent), json),
+    field("future", list(futureEvent), json),
+  );
 };
 
 type result('a, 'b) =
@@ -28,7 +52,7 @@ module Utils = {
   let something_went_wrong = _err =>
     Fail("Something went wront...") |> Js.Promise.resolve;
 
-  let handle_response = res => {
+  let handle_response = res =>
     Js.Promise.(
       Fetch.Response.(
         if (ok(res)) {
@@ -38,7 +62,6 @@ module Utils = {
         }
       )
     );
-  };
 };
 
 module Fetch = {
@@ -47,13 +70,13 @@ module Fetch = {
       Fetch.fetch(url)
       |> then_(Utils.handle_response)
       |> then_(either_json =>
-          resolve(
-            switch (either_json) {
-            | Ok(res) => Ok(success_decoder(res))
-            | Fail(_) => Fail("Something went wrong...")
-            },
-          )
-        )
+           resolve(
+             switch (either_json) {
+             | Ok(res) => Ok(success_decoder(res))
+             | Fail(_) => Fail("Something went wrong...")
+             },
+           )
+         )
       |> catch(Utils.something_went_wrong)
     );
 };
