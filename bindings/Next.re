@@ -25,11 +25,13 @@ module Error = {
     "default";
 };
 
-// Next bindings
-// @link: https://github.com/sync/with-reasonml/blob/a094134bb9f8a384c4eef6eda3ce084a81a46f8f/src/bindings/Next.re
-//
-// Usage
-// https://github.com/sync/with-reasonml/blob/a094134bb9f8a384c4eef6eda3ce084a81a46f8f/src/components/ActiveLink.re
+/**
+ * Next bindings
+ * @link: https://github.com/sync/with-reasonml/blob/a094134bb9f8a384c4eef6eda3ce084a81a46f8f/src/bindings/Next.re
+ *
+ * Usage
+ * https://github.com/sync/with-reasonml/blob/a094134bb9f8a384c4eef6eda3ce084a81a46f8f/src/components/ActiveLink.re
+ */
 module Router = {
   [@gentype]
   type t = {. "pathname": string};
