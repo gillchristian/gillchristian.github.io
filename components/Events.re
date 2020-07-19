@@ -91,15 +91,15 @@ module FutureEvent = {
         }
       </div>
       <p className="event-date">
-          {
-            ReasonReact.string(
-              "Starts "
-              ++ Utils.Time.fromNow(date)
-              ++ " ("
-              ++ Utils.Time.formatDate(date)
-              ++ ")",
-            )
-          }
+        {
+          ReasonReact.string(
+            "Starts "
+            ++ Utils.Time.fromNow(date)
+            ++ " ("
+            ++ Utils.Time.formatDate(date)
+            ++ ")",
+          )
+        }
       </p>
       <p className="event-description">
         {
