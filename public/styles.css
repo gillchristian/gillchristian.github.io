@@ -248,18 +248,37 @@ a:focus, a:hover {
 .event.future {
   border-width: 2px;
 }
-.event.past * {
-  color: #808080;
-}
 
 .event-title {
   font-size: 1.6rem;
 }
-.event-date {
+.event-content-lg {
   font-size: 1.3rem;
 }
-.event-description {
+.event-content-md {
   font-size: 1.1rem;
+}
+
+.events-tabs {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  max-width: 648px;
+}
+
+.events-tab {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 3px solid #4a4a4a;
+}
+
+.events-tab.active {
+  color: #e57a5a;
+  border-bottom-color: #e57a5a;
 }
 
 /* Tsearch articles */

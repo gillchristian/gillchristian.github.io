@@ -26,21 +26,23 @@ module Decode = {
     optional(field("topic_url", string), json),
   );
 
-  let pastEvent = json: Events.pastEvent => {
-    date: field("date", string, json),
+  let past_event = json: Events.past_event => {
+    start_date: field("start_date", string, json),
+    end_date: field("end_date", string, json),
     topic: topic(json),
     description: optional(field("description", string), json),
+    vod: optional(field("vod", string), json),
   };
 
-  let futureEvent = json: Events.futureEvent => {
-    date: field("date", string, json),
+  let future_event = json: Events.future_event => {
+    start_date: field("start_date", string, json),
     topic: optional(topic, json),
     description: optional(field("description", string), json),
   };
 
   let events = json => (
-    field("past", list(pastEvent), json),
-    field("future", list(futureEvent), json),
+    field("past", list(past_event), json),
+    field("future", list(future_event), json),
   );
 };
 

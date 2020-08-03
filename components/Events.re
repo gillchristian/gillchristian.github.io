@@ -1,20 +1,22 @@
 type topic = (string, option(string));
 
-type pastEvent = {
-  date: string,
+type past_event = {
+  start_date: string,
+  end_date: string,
   topic,
   description: option(string),
+  vod: option(string),
 };
 
-type futureEvent = {
-  date: string,
+type future_event = {
+  start_date: string,
   topic: option(topic),
   description: option(string),
 };
 
-type events = (list(pastEvent), list(futureEvent));
+type events = (list(past_event), list(future_event));
 
-type futureEventType =
+type future_eventType =
   | Next
   | Future;
 
@@ -28,7 +30,7 @@ let channel = "https://twitch.tv/gillchristian";
 
 module PastEvent = {
   [@react.component]
-  let make = (~event as {date, topic, description}: pastEvent) =>
+  let make = (~event as {end_date, topic, description, vod}: past_event) =>
     <div className="event past">
       <div className="event-title">
         {
@@ -44,18 +46,18 @@ module PastEvent = {
           }
         }
       </div>
-      <p className="event-date">
+      <p className="event-content-lg">
         {
           ReasonReact.string(
             "Finished "
-            ++ Utils.Time.fromNow(date)
+            ++ Utils.Time.fromNow(end_date)
             ++ " ("
-            ++ Utils.Time.formatDate(date)
+            ++ Utils.Time.formatDate(end_date)
             ++ ")",
           )
         }
       </p>
-      <p className="event-description">
+      <p className="event-content-md">
         {
           Belt.Option.mapWithDefault(
             description,
@@ -64,6 +66,17 @@ module PastEvent = {
           )
         }
       </p>
+      {
+        switch (vod) {
+        | Some(url) =>
+          <div className="event-content-lg">
+            <a href=url target="_blank" rel="noopener noreferrer">
+              {ReasonReact.string({js|Recording 👀|js})}
+            </a>
+          </div>
+        | None => ReasonReact.null
+        }
+      }
     </div>;
 
   let default = make;
@@ -71,7 +84,7 @@ module PastEvent = {
 
 module FutureEvent = {
   [@react.component]
-  let make = (~event as {date, topic, description}, ~eventType) =>
+  let make = (~event as {start_date, topic, description}, ~eventType) =>
     <div className={Style.cx([Some("event"), Some(eventCx(eventType))])}>
       <div className="event-title">
         {
@@ -90,18 +103,18 @@ module FutureEvent = {
           }
         }
       </div>
-      <p className="event-date">
+      <p className="event-content-lg">
         {
           ReasonReact.string(
             "Starts "
-            ++ Utils.Time.fromNow(date)
+            ++ Utils.Time.fromNow(start_date)
             ++ " ("
-            ++ Utils.Time.formatDate(date)
+            ++ Utils.Time.formatDate(start_date)
             ++ ")",
           )
         }
       </p>
-      <p className="event-description">
+      <p className="event-content-md">
         {
           Belt.Option.mapWithDefault(
             description,
@@ -114,31 +127,3 @@ module FutureEvent = {
 
   let default = make;
 };
-
-[@react.component]
-let make = (~events as (past, future)) =>
-  <React.Fragment>
-    {
-      past
-      |> List.map(event => <PastEvent event />)
-      |> Array.of_list
-      |> ReasonReact.array
-    }
-    {
-      switch (future) {
-      | [] => <div> {ReasonReact.string("No streams planned =(")} </div>
-      | [next, ...rest] =>
-        <React.Fragment>
-          <FutureEvent event=next eventType=Next />
-          {
-            rest
-            |> List.map(event => <FutureEvent event eventType=Future />)
-            |> Array.of_list
-            |> ReasonReact.array
-          }
-        </React.Fragment>
-      }
-    }
-  </React.Fragment>;
-
-let default = make;
