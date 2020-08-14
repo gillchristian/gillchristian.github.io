@@ -10,6 +10,8 @@ module List = {
     | [] => None
     | [_, ...rest] => Some(rest)
     };
+
+  let cons = (head, rest) => List.append([head], rest);
 };
 
 module Time = {
@@ -32,4 +34,12 @@ module Time = {
       return datetime.tz(moment.tz.guess()).fromNow()
     })|}
   ];
+};
+
+module Fn = {
+  let const = (a, _) => a;
+
+  let id = a => a;
+
+  let (>>) = (g, f, a) => f(g(a));
 };

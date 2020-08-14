@@ -1,3 +1,5 @@
+open Utils.Fn;
+
 let channel = "https://twitch.tv/gillchristian";
 
 let url = "https://api.jsonbin.io/b/5f14a3e4918061662844bcd6/latest";
@@ -7,6 +9,31 @@ type tabs =
   | Past;
 
 let activeCx = (x, y) => x === y ? Some("active") : None;
+
+let handle_description = desc =>
+  Belt.Option.map(
+    desc,
+    EventDescription.parse_description
+    >> Either.mapLeft(const(Belt.Option.getWithDefault(desc, ""))),
+  );
+
+let past_event = (event: IO.past_event): Events.past_event => {
+  start_date: event.start_date,
+  end_date: event.end_date,
+  topic: event.topic,
+  description: handle_description(event.description),
+  vod: event.vod,
+};
+let future_event = (event: IO.future_event): Events.future_event => {
+  start_date: event.start_date,
+  topic: event.topic,
+  description: handle_description(event.description),
+};
+
+let decode_events_description = ((past, future)) => (
+  List.map(past_event, past),
+  List.map(future_event, future),
+);
 
 [@react.component]
 let make = () => {
@@ -21,8 +48,10 @@ let make = () => {
       |> then_(res =>
            (
              switch (res) {
-             | IO.Ok(articles) =>
-               setEvents(_ => RemoteData.Success(articles))
+             | IO.Ok(es) =>
+               setEvents(_ =>
+                 RemoteData.Success(decode_events_description(es))
+               )
              | IO.Fail(error) => setEvents(_ => RemoteData.Failure(error))
              }
            )

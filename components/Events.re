@@ -4,14 +4,14 @@ type past_event = {
   start_date: string,
   end_date: string,
   topic,
-  description: option(string),
+  description: EventDescription.description,
   vod: option(string),
 };
 
 type future_event = {
   start_date: string,
   topic: option(topic),
-  description: option(string),
+  description: EventDescription.description,
 };
 
 type events = (list(past_event), list(future_event));
@@ -57,15 +57,7 @@ module PastEvent = {
           )
         }
       </p>
-      <p className="event-content-md">
-        {
-          Belt.Option.mapWithDefault(
-            description,
-            ReasonReact.null,
-            ReasonReact.string,
-          )
-        }
-      </p>
+      <EventDescription description />
       {
         switch (vod) {
         | Some(url) =>
@@ -114,15 +106,7 @@ module FutureEvent = {
           )
         }
       </p>
-      <p className="event-content-md">
-        {
-          Belt.Option.mapWithDefault(
-            description,
-            ReasonReact.null,
-            ReasonReact.string,
-          )
-        }
-      </p>
+      <EventDescription description />
     </div>;
 
   let default = make;

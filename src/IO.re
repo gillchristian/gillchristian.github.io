@@ -8,6 +8,24 @@ type article = {
   url: string,
 };
 
+type topic = (string, option(string));
+
+type past_event = {
+  start_date: string,
+  end_date: string,
+  topic,
+  description: option(string),
+  vod: option(string),
+};
+
+type future_event = {
+  start_date: string,
+  topic: option(topic),
+  description: option(string),
+};
+
+type events = (list(past_event), list(future_event));
+
 module Decode = {
   open Json.Decode;
 
@@ -26,7 +44,7 @@ module Decode = {
     optional(field("topic_url", string), json),
   );
 
-  let past_event = json: Events.past_event => {
+  let past_event = json => {
     start_date: field("start_date", string, json),
     end_date: field("end_date", string, json),
     topic: topic(json),
@@ -34,7 +52,7 @@ module Decode = {
     vod: optional(field("vod", string), json),
   };
 
-  let future_event = json: Events.future_event => {
+  let future_event = json => {
     start_date: field("start_date", string, json),
     topic: optional(topic, json),
     description: optional(field("description", string), json),
