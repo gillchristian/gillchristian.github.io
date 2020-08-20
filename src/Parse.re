@@ -41,7 +41,7 @@ let bind = (f: 'a => parser('b), pa: parser('a)): parser('b) =>
   str =>
     switch (pa(str)) {
     | (rest, Right(a)) => f(a, rest)
-    | failure => failure
+    | (rest, Left(err)) => (rest, Left(err))
     };
 
 let (>>=) = (pa: parser('a), f: 'a => parser('b)): parser('b) =>

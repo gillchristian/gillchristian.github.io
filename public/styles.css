@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-} 
+}
 
 html {
   font-size: 16px;
@@ -23,7 +23,8 @@ blockquote {
   margin: 10px 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -33,12 +34,14 @@ p {
   margin-bottom: 5px;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: #e57a5a;
   text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #5dbcd2;
   text-decoration: underline;
   cursor: pointer;
@@ -207,15 +210,32 @@ a:focus, a:hover {
 /* Project */
 .project {
   margin-bottom: 40px;
-} 
+}
 
 .project-title {
   font-size: 1.1rem;
 }
 
 /* Talk */
-.talk {
+.talk,
+.talks-icons-reference {
   margin-bottom: 40px;
+}
+
+.talks-icons-reference {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+  .talks-icons-reference {
+    flex-direction: column;
+  }
+}
+
+.talks-icons-reference > span {
+  margin-right: 20px;
 }
 
 .talk-title {

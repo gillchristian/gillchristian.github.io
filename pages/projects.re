@@ -1,5 +1,13 @@
 let projects: list(Project.project) = [
   {
+    title: {js|⬆️ Subilo|js},
+    tags: ["Rust", "CI/CD"],
+    repo: "https://github.com/Huemul/suilo",
+    url: Some("https://subilo.io"),
+    description: {js|Deployment automation agent|js},
+    isExternal: false,
+  },
+  {
     title: {js|🔗 tsplay.dev|js},
     tags: ["typescript", "dev tools"],
     repo: "https://github.com/gillchristian/tsplay.dev",
@@ -64,11 +72,11 @@ let projects: list(Project.project) = [
     isExternal: false,
   },
   {
-    title: "@housinganywhere/safe-redux",
-    tags: ["typescript", "redux"],
-    repo: "https://github.com/housinganywhere/safe-redux",
+    title: "safe-redux-ts",
+    tags: ["typescript", "redux", "useReducer"],
+    repo: "https://github.com/gillchristian/safe-redux-ts",
     url: None,
-    description: {js|Safely create and handle Redux actions|js},
+    description: {js|Safely create and handle Redux (and useReducer) actions|js},
     isExternal: false,
   },
   {

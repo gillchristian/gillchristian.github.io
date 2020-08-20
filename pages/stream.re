@@ -10,12 +10,15 @@ type tabs =
 
 let activeCx = (x, y) => x === y ? Some("active") : None;
 
-let handle_description = desc =>
-  Belt.Option.map(
-    desc,
-    EventDescription.parse_description
-    >> Either.mapLeft(const(Belt.Option.getWithDefault(desc, ""))),
-  );
+let handle_description =
+  fun
+  | None => None
+  | Some(desc) =>
+    Some(
+      desc
+      |> EventDescription.parse_description
+      |> Either.mapLeft(const(desc)),
+    );
 
 let past_event = (event: IO.past_event): Events.past_event => {
   start_date: event.start_date,

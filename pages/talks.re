@@ -1,5 +1,20 @@
 let talks: list(Talk.talk) = [
   {
+    title: "A Software Engineer's Experience with the Benefits of Using TypeScript",
+    event: "OfferZen Podcast",
+    eventUrl: "https://www.offerzen.com/blog/software-engineers-experience-benefits-typescript",
+    description: "A chat with Jomiro on why I enjoy working with TypeScript, some of the benefits and advice for those gettings started",
+    date: "August 2020",
+    links: [
+      {
+        url: "https://www.offerzen.com/blog/software-engineers-experience-benefits-typescript",
+        label: "Podcast",
+      },
+      {url: "https://www.youtube.com/watch?v=wQLNyvigZ1M", label: "Video"},
+    ],
+    talk_type: Talk.Podcast,
+  },
+  {
     title: "Modeling your way to consistency",
     event: "Frontend at Catawiki",
     eventUrl: "https://www.meetup.com/javascript-workshops-amsterdam/events/270592994/",
@@ -12,12 +27,13 @@ let talks: list(Talk.talk) = [
         label: "Slides (repo)",
       },
     ],
+    talk_type: Talk.Meetup,
   },
   {
     title: "Modeling your way to consistency",
     event: "dotJS",
     eventUrl: "https://dotjs.io",
-    description: "(lightning talk) How domain modeling can help us to make our apps consistent & safe",
+    description: "How domain modeling can help us to make our apps consistent & safe",
     date: "December 2019",
     links: [
       {
@@ -30,6 +46,7 @@ let talks: list(Talk.talk) = [
         label: "Slides (repo)",
       },
     ],
+    talk_type: Talk.Lightning,
   },
   {
     title: "FP For The People (v2)",
@@ -48,6 +65,7 @@ let talks: list(Talk.talk) = [
         label: "Slides (repo)",
       },
     ],
+    talk_type: Talk.Conference,
   },
   {
     title: "FP for the People",
@@ -59,6 +77,7 @@ let talks: list(Talk.talk) = [
       {url: "https://gillchristian.xyz/fp-in-js", label: "Slides"},
       {url: "https://www.youtube.com/watch?v=WIl921KAX0g", label: "Stream"},
     ],
+    talk_type: Talk.Meetup,
   },
   {
     title: "React, UI con esteroides",
@@ -78,6 +97,7 @@ let talks: list(Talk.talk) = [
       },
       {url: "https://youtu.be/REPQDmYnYPk?t=48m2s", label: "Stream"},
     ],
+    talk_type: Talk.Meetup,
   },
   {
     title: "Developing with GIT",
@@ -93,6 +113,7 @@ let talks: list(Talk.talk) = [
         label: "Stream",
       },
     ],
+    talk_type: Talk.Workshop,
   },
   {
     title: "JavaScript ES6",
@@ -107,6 +128,7 @@ let talks: list(Talk.talk) = [
         label: "Repo",
       },
     ],
+    talk_type: Talk.Meetup,
   },
   {
     title: "Introduction to Angular",
@@ -126,6 +148,7 @@ let talks: list(Talk.talk) = [
         label: "Repo",
       },
     ],
+    talk_type: Talk.Meetup,
   },
 ];
 
@@ -155,6 +178,31 @@ let make = () =>
         <p> <i> {ReasonReact.string("Gerald Sussman.")} </i> </p>
       </blockquote>
       <h1> {ReasonReact.string("Talks at meetups & conferences")} </h1>
+      <div className="talks-icons-reference">
+        <span>
+          {
+            ReasonReact.string(
+              Talk.talk_icon(Talk.Conference) ++ " Conference",
+            )
+          }
+        </span>
+        <span>
+          {ReasonReact.string(Talk.talk_icon(Talk.Meetup) ++ " Meetup")}
+        </span>
+        <span>
+          {
+            ReasonReact.string(
+              Talk.talk_icon(Talk.Lightning) ++ " Lightning talk",
+            )
+          }
+        </span>
+        <span>
+          {ReasonReact.string(Talk.talk_icon(Talk.Workshop) ++ " Workshop")}
+        </span>
+        <span>
+          {ReasonReact.string(Talk.talk_icon(Talk.Podcast) ++ " Podcast")}
+        </span>
+      </div>
       <div>
         {talks |> List.map(render_talk) |> Array.of_list |> ReasonReact.array}
       </div>
