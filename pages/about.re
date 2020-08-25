@@ -22,14 +22,11 @@ let make = () =>
       </p>
       <br />
       <p>
+        {ReasonReact.string("I code in Haskell, Elm, Reason and Rust ")}
+        <Next.Link href="/stream"> {ReasonReact.string("when some are watching")} </Next.Link>
         {
           ReasonReact.string(
-            "I code in Haskell, Elm, Reason and Rust when nobody is watching, ",
-          )
-        }
-        {
-          ReasonReact.string(
-            "looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. ",
+            ", looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. ",
           )
         }
         {
