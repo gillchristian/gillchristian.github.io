@@ -246,8 +246,10 @@ a:hover {
 .events-title {
   margin-bottom: 10px;
 }
+
 .events-title-stream {
   margin-top: 10px;
+  font-size: 1.3rem;
 }
 
 .events-list {
@@ -301,6 +303,10 @@ a:hover {
   border-bottom-color: #e57a5a;
 }
 
+.feedback {
+  font-size: 1.3rem;
+}
+
 /* Tsearch articles */
 .tsearch-title {
   display: flex;
@@ -312,3 +318,4 @@ a:hover {
   height: 32px;
   margin-left: 10px;
 }
+

@@ -2,6 +2,10 @@ open Utils.Fn;
 
 let channel = "https://twitch.tv/gillchristian";
 
+let discord = "https://discord.gg/UMdeMUq";
+
+let declarative_tv = "https://declarative.tv/";
+
 let url = "https://api.jsonbin.io/b/5f14a3e4918061662844bcd6/latest";
 
 type tabs =
@@ -76,63 +80,82 @@ let make = () => {
         <a href=channel target="_blank" rel="noopener noreferrer">
           {ReasonReact.string("twitch.tv/gillchristian")}
         </a>
+        { ReasonReact.string(" / ") }
+        <a href=discord target="_blank" rel="noopener noreferrer">
+          {ReasonReact.string("Discord #ttv_gillchristian")}
+        </a>
       </h2>
+      <p>
+        { ReasonReact.string("I code random side projects, while some are watching. Mostly in strongly typed functional languages like Haskell and PureScript.") }
+      </p>
+      <p>
+        { ReasonReact.string("Come say Hi and chat, or just lurk if that's your thing.") }
+      </p>
+
       <div className="events-list">
+        <div className="events-tabs">
+          <h3
+            className={
+              Style.cx([Some("events-tab"), activeCx(Future, tab)])
+            }
+            onClick=(_ => setTab(_ => Future))>
+            {ReasonReact.string("Upcoming")}
+          </h3>
+          <h3
+            className={
+              Style.cx([Some("events-tab"), activeCx(Past, tab)])
+            }
+            onClick=(_ => setTab(_ => Past))>
+            {ReasonReact.string("Past")}
+          </h3>
+        </div>
         {
-          switch (events) {
-          | RemoteData.NotAsked =>
-            <span> {ReasonReact.string("Loading ...")} </span>
-          | RemoteData.Loading =>
-            <span> {ReasonReact.string("Loading ...")} </span>
-          | RemoteData.Success((past, future)) =>
-            <React.Fragment>
-              <div className="events-tabs">
-                <h3
-                  className={
-                    Style.cx([Some("events-tab"), activeCx(Future, tab)])
-                  }
-                  onClick=(_ => setTab(_ => Future))>
-                  {ReasonReact.string("Upcoming")}
-                </h3>
-                <h3
-                  className={
-                    Style.cx([Some("events-tab"), activeCx(Past, tab)])
-                  }
-                  onClick=(_ => setTab(_ => Past))>
-                  {ReasonReact.string("Past")}
-                </h3>
+          switch ((tab, events)) {
+          | (_, RemoteData.NotAsked) =>
+            <span className="feedback">
+              {ReasonReact.string({js|⌛ Loading ...|js})}
+            </span>
+          | (_, RemoteData.Loading) =>
+            <span className="feedback">
+              {ReasonReact.string({js|⌛ Loading ...|js})}
+            </span>
+          | (Past, RemoteData.Success((past, _))) =>
+            past
+            |> List.map(event => <Events.PastEvent event />)
+            |> Array.of_list
+            |> ReasonReact.array
+          | (Future, RemoteData.Success((_, future))) =>
+            switch (future) {
+            | [] =>
+              <div>
+                <p className="feedback">
+                  {ReasonReact.string({js|🤦 No streams planned ...|js})}
+                </p>
+                <p className="feedback">
+                  {ReasonReact.string("Maybe another FP streamer is live? ")}
+                  <a href=declarative_tv target="_blank" rel="noopener noreferrer">
+                    {ReasonReact.string("declarative.tv")}
+                  </a>
+                </p>
+
               </div>
-              {
-                switch (tab) {
-                | Past =>
-                  past
-                  |> List.map(event => <Events.PastEvent event />)
+            | [next, ...rest] =>
+              <React.Fragment>
+                <Events.FutureEvent event=next eventType=Events.Next />
+                {
+                  rest
+                  |> List.map(event =>
+                        <Events.FutureEvent
+                          event
+                          eventType=Events.Future
+                        />
+                      )
                   |> Array.of_list
                   |> ReasonReact.array
-                | Future =>
-                  switch (future) {
-                  | [] =>
-                    <div> {ReasonReact.string("No streams planned =(")} </div>
-                  | [next, ...rest] =>
-                    <React.Fragment>
-                      <Events.FutureEvent event=next eventType=Events.Next />
-                      {
-                        rest
-                        |> List.map(event =>
-                             <Events.FutureEvent
-                               event
-                               eventType=Events.Future
-                             />
-                           )
-                        |> Array.of_list
-                        |> ReasonReact.array
-                      }
-                    </React.Fragment>
-                  }
                 }
-              }
-            </React.Fragment>
-          | RemoteData.Failure(err) =>
+              </React.Fragment>
+            }
+          | (_, RemoteData.Failure(err)) =>
             <span> {ReasonReact.string(err)} </span>
           }
         }
