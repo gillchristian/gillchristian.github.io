@@ -13,25 +13,20 @@ let make = () =>
         </a>
         {ReasonReact.string(" now living in ")}
         <a
-          href="https://en.wikipedia.org/wiki/Amsterdam"
+          href="https://en.wikipedia.org/wiki/Winschoten"
           target="_blank"
           rel="noopener noreferrer">
-          {ReasonReact.string("Amsterdam, The Netherlands")}
+          {ReasonReact.string("Winschoten, The Netherlands")}
         </a>
         {ReasonReact.string(".")}
       </p>
       <br />
       <p>
-        {ReasonReact.string("I code in Haskell, Elm, Reason and Rust ")}
+        {ReasonReact.string("I code in Haskell, PureScript, Elm, Reason and Rust ")}
         <Next.Link href="/stream"> {ReasonReact.string("when some are watching")} </Next.Link>
         {
           ReasonReact.string(
             ", looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. ",
-          )
-        }
-        {
-          ReasonReact.string(
-            "Specially to the frontend side, since that's where my work is focused. ",
           )
         }
         {
@@ -54,6 +49,45 @@ let make = () =>
         }
       </p>
       <h2> {ReasonReact.string("So far I worked at ...")} </h2>
+      /* Scarf */
+      <div className="about-job">
+        <p>
+          <a
+            href="https://about.scarf.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-job-company">
+            <b> {ReasonReact.string("Scarf")} </b>
+          </a>
+          <small> {ReasonReact.string(" | February 2022 - present")} </small>
+        </p>
+        <p>
+          <b>
+            {
+              ReasonReact.string(
+                "Senior Software Engineer"
+              )
+            }
+          </b>
+          {
+            ReasonReact.string(
+              ", helping open-source maintainers connect with their users and deliver better software.",
+            )
+          }
+        </p>
+        <small>
+          <Tags
+            tags=[
+              "TypeScript",
+              "Vue",
+              "Nix",
+              "Haskell",
+              "Docker",
+              "Kubernetes",
+            ]
+          />
+        </small>
+      </div>
       /* Catawiki */
       <div className="about-job">
         <p>
@@ -64,12 +98,19 @@ let make = () =>
             className="about-job-company">
             <b> {ReasonReact.string("Catawiki")} </b>
           </a>
-          <small> {ReasonReact.string(" | October 2019 - Present")} </small>
+          <small> {ReasonReact.string(" | October 2019 - January 2022")} </small>
         </p>
         <p>
+          <b>
+            {
+              ReasonReact.string(
+                "Senior Software Engineer"
+              )
+            }
+          </b>
           {
             ReasonReact.string(
-              "Senior Software Engineer, helping people to buy and sell special objects by improving the payments and shipping experiences.",
+              ", helped people to buy and sell special objects by improving the payments and shipping experiences.",
             )
           }
         </p>
@@ -102,7 +143,31 @@ let make = () =>
         <p>
           {
             ReasonReact.string(
-              "As Senior Software Engineer and Team Lead at HousingAnywhere I helped to change the way people, specially students, find accommodation around the world.",
+              "As "
+            )
+          }
+          <b>
+            {
+              ReasonReact.string(
+                "Senior Software Engineer"
+              )
+            }
+          </b>
+          {
+            ReasonReact.string(
+              " and "
+            )
+          }
+          <b>
+            {
+              ReasonReact.string(
+                "Team Lead"
+              )
+            }
+          </b>
+          {
+            ReasonReact.string(
+              " at HousingAnywhere I helped to change the way people, specially students, find accommodation around the world."
             )
           }
         </p>

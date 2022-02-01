@@ -1,10 +1,10 @@
 let projects: list(Project.project) = [
   {
-    title: {js|⬆️ Subilo|js},
-    tags: ["Rust", "CI/CD"],
-    repo: "https://github.com/Huemul/suilo",
-    url: Some("https://subilo.io"),
-    description: {js|Deployment automation agent|js},
+    title: "Listas",
+    tags: ["PureScript", "Halogen", "Tailwind"],
+    repo: "https://github.com/gillchristian/listas-web",
+    url: Some("https://listas.io"),
+    description: "Reading lists manager",
     isExternal: false,
   },
   {
@@ -16,11 +16,27 @@ let projects: list(Project.project) = [
     isExternal: false,
   },
   {
+    title: "twpurs",
+    tags: ["Haskell", "PureScript", "Tailwind"],
+    repo: "https://github.com/gillchristian/tailwind-purs",
+    url: None,
+    description: "Type safe Tailwind for PureScript Halogen",
+    isExternal: false,
+  },
+  {
     title: {js|🔍 tsearch.io|js},
     tags: ["typescript", "dev tools"],
     repo: "https://github.com/gillchristian/ts-earch",
     url: Some("https://tsearch.io"),
     description: {js|Search TypeScript functions and methods by types|js},
+    isExternal: false,
+  },
+  {
+    title: {js|⬆️ Subilo|js},
+    tags: ["Rust", "CI/CD"],
+    repo: "https://github.com/Huemul/suilo",
+    url: None, // "https://subilo.io" is down
+    description: {js|Deployment automation agent|js},
     isExternal: false,
   },
   {
