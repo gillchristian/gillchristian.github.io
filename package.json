@@ -16,7 +16,7 @@
     "bs-fetch": "^0.5.0",
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.27.0",
-    "moment-timezone": "^0.5.31",
+    "moment-timezone": "^0.5.35",
     "next": "latest",
     "next-transpile-modules": "2.3.1",
     "react": "^16.8.6",
