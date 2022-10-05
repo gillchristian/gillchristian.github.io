@@ -79,7 +79,8 @@ let make = () =>
           <Tags
             tags=[
               "TypeScript",
-              "Vue",
+              "Next.js",
+              "Node.js",
               "Nix",
               "Haskell",
               "Docker",
@@ -120,7 +121,7 @@ let make = () =>
               "TypeScript",
               "fp-ts",
               "React",
-              "Node",
+              "Node.js",
               "Docker",
               "Kubernetes",
               "CI/CD",
@@ -176,7 +177,7 @@ let make = () =>
             tags=[
               "TypeScript",
               "React",
-              "Node",
+              "Node.js",
               "Golang",
               "Docker",
               "Kubernetes",
@@ -205,7 +206,7 @@ let make = () =>
           }
         </p>
         <small>
-          <Tags tags=["JavaScipt", "Node", "Angular", "React"] />
+          <Tags tags=["JavaScipt", "Node.js", "Angular", "React"] />
         </small>
       </div>
       /* 4r Software */
