@@ -94,6 +94,7 @@ a:hover {
 .home-header {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 /* About */
@@ -318,4 +319,3 @@ a:hover {
   height: 32px;
   margin-left: 10px;
 }
-

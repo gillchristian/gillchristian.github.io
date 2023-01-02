@@ -1,8 +1,7 @@
-bs
-.merlin
-lib/
-*.bs.js
-.bsb.lock
-.next
-node_modules
+/dist
+/.elm-land
+/.env
+/elm-stuff
+/node_modules
 .DS_Store
+*.pem
