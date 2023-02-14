@@ -11,7 +11,6 @@ type Page
   | Talks
   | About
 
--- TODO: Link component that shows active on the page (span.header-active)
 header : Page -> Html msg
 header current =
     Html.div
