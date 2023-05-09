@@ -57,7 +57,7 @@ stream : Html msg
 stream =
     Html.p
         []
-        [ Html.text "I code in Haskell, PureScript, Elm, Reason, and Rust "
+        [ Html.text "I code in Rust, Haskell, PureScript, Elm, and Reason "
         , Html.a
             [ Attr.href "/stream" ]
             [ Html.text "when some are watching" ]
@@ -131,7 +131,8 @@ jobs =
       , roles = Just [ "Senior Software Engineer" ]
       , description = "I help business to achieve data-driven task management"
       , techs =
-            [ "Elm"
+            [ "Rust"
+            , "Elm"
             , "Tailwind"
             , "Haskell"
             , "TypeScript"
