@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "elm-land build"
+  },
+  "dependencies": {
+    "elm": "^0.19.1-5",
+    "elm-land": "^0.18.1"
+  }
+}
