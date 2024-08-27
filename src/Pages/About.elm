@@ -55,9 +55,9 @@ stream : Html msg
 stream =
     Html.p
         []
-        [ Html.text "I code in Rust, Elm, Haskell, TypeScript, and anything else. "
-        , Html.text "Looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream."
-        ,  Html.text "Also, check my "
+        [ Html.text "I code mostly in Rust, Elm, Haskell, and TypeScript. "
+        , Html.text "Looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. "
+        , Html.text "Also, check my "
         , Html.a
             [ Attr.href "https://github.com/gillchristian/dotfiles"
             , Attr.target "_blank"
@@ -66,8 +66,6 @@ stream =
             [ Html.text "dotfiles" ]
         , Html.text ", every developer should have their dotfiles :)"
         ]
-
-
 
 
 job : Job -> Html msg

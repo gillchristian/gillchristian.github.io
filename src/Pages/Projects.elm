@@ -54,7 +54,7 @@ quote =
 type alias Project =
     { title : String
     , techs : List String
-    , repo : String
+    , repo : String -- TODO: use the same `urls` pattern as in `Talks`
     , url : Maybe String
     , description : String
     , isExternal : Bool
@@ -105,7 +105,21 @@ project p =
 
 projects : List Project
 projects =
-    [ { title = "Listas"
+    [ { title = "rustdis"
+      , techs = [ "Rust", "Redis" ]
+      , repo = "https://github.com/ndelvalle/rustdis"
+      , url = Just "https://x.com/gillchristian/status/1784527143952609395"
+      , description = "Partial Redis server implementation using Rust. For learning purposes."
+      , isExternal = True
+      }
+    , { title = "ScriptureStudy"
+      , techs = [ "TypeScript", "React" ]
+      , repo = "https://github.com/gillchristian/ScriptureStudy"
+      , url = Just "https://x.com/gillchristian/status/1618157855974260736"
+      , description = "My own Bible, with a developer's twist"
+      , isExternal = False
+      }
+    , { title = "Listas"
       , techs = [ "PureScript", "Halogen", "Tailwind" ]
       , repo = "https://github.com/gillchristian/listas-web"
       , url = Just "https://listas.io"

@@ -1,16 +1,16 @@
 module Pages.Home_ exposing (page)
 
-import Html
-import View exposing (View)
-import Html.Attributes as Attr
+import Components.Header exposing (Page(..), header)
 import Components.Social exposing (social)
-import Components.Header exposing (header, Page(..))
+import Html
+import Html.Attributes as Attr
+import View exposing (View)
 
 
 page : View msg
 page =
     { title = "Home"
-    , body = 
+    , body =
         [ Html.div
             [ Attr.class "home-wrapper" ]
             [ Html.div

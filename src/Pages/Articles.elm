@@ -1,117 +1,52 @@
-module Pages.Articles exposing (Model, Msg, page)
+module Pages.Articles exposing (page)
 
 import Components.Header exposing (Page(..))
 import Components.Sidebar
-import Components.Tags as Tags
 import Html exposing (Html)
 import Html.Attributes as Attr
-import Http
-import Json.Decode as D
-import Page exposing (Page)
-import RemoteData exposing (RemoteData)
 import View exposing (View)
 
 
-page : Page Model Msg
+page : View msg
 page =
-    Page.element
-        { init = init
-        , update = update
-        , subscriptions = subscriptions
-        , view = view
-        }
-
-
-subscriptions : Model -> Sub Msg
-subscriptions _ =
-    Sub.none
-
-
-view : Model -> View Msg
-view model =
     Components.Sidebar.view
         Articles
         { page =
             { title = "Writing"
             , body =
                 [ quote
-                , Html.h1 [] [ Html.text "Writings" ]
+                , Html.h1 [] [ Html.text "Writing" ]
                 , Html.div
-                    []
-                  <|
-                    case model.articles of
-                        RemoteData.NotAsked ->
-                            [ Html.text "..." ]
-
-                        RemoteData.Loading ->
-                            [ Html.text "..." ]
-
-                        RemoteData.Success as_ ->
-                            if List.isEmpty as_ then
-                                [ Html.text "..." ]
-
-                            else
-                                List.map article as_
-
-                        RemoteData.Failure msg ->
-                            [ Html.text msg ]
+                    [ Attr.class "articles" ]
+                    [ link
+                        { title = "Blog 📝"
+                        , url = "https://blog.gillchristian.xyz/"
+                        , description = Just "Mostly technical stuff."
+                        }
+                    , link
+                        { title = "Digital Garden 🪴"
+                        , url = "https://garden.gillchristian.xyz/"
+                        , description = Just "Less polished notes and thoughts, on software and a bunch of other things."
+                        }
+                    , link
+                        { title = "Stream 🌊"
+                        , url = "https://stream.gillchristian.xyz/"
+                        , description = Just "Stream of consciousness."
+                        }
+                    , link
+                        { title = "Ferrum Field 🦀"
+                        , url = "https://ferrum-field.vercel.app/"
+                        , description = Just "Notes on Rust and systems programming."
+                        }
+                    , link
+                        { title = "Library 📚"
+                        , url = "https://library.gillchristian.xyz/"
+                        , description = Just "Books I've read and I'm reading."
+                        }
+                    ]
                 ]
             }
         }
-
-
-type alias Model =
-    { articles : RemoteData String (List Article) }
-
-
-type Msg
-    = GotArticles (RemoteData String (List Article))
-
-
-init : ( Model, Cmd Msg )
-init =
-    ( { articles = RemoteData.NotAsked }
-    , getArticles
-    )
-
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotArticles as_ ->
-            ( { model | articles = as_ }
-            , Cmd.none
-            )
-
-
-url : String
-url =
-    "https://dev.to/api/articles?username=gillchristian"
-
-
-getArticles : Cmd Msg
-getArticles =
-    Http.get
-        { url = url
-        , expect =
-            Http.expectJson
-                (Result.mapError
-                    (\_ -> "Could not load articles")
-                    >> RemoteData.fromResult
-                    >> GotArticles
-                )
-            <|
-                D.list articleD
-        }
-
-
-articleD : D.Decoder Article
-articleD =
-    D.map4 Article
-        (D.field "title" D.string)
-        (D.field "url" D.string)
-        (D.field "readable_publish_date" D.string)
-        (D.field "tag_list" (D.list D.string))
 
 
 quote : Html msg
@@ -129,16 +64,15 @@ quote =
         ]
 
 
-type alias Article =
+type alias Link =
     { title : String
     , url : String
-    , date : String
-    , tags : List String
+    , description : Maybe String
     }
 
 
-article : Article -> Html msg
-article a =
+link : Link -> Html msg
+link a =
     Html.div
         [ Attr.class "article" ]
         [ Html.div
@@ -151,11 +85,10 @@ article a =
                 ]
                 [ Html.text a.title ]
             ]
-        , Html.small
-            []
-            [ Html.span
-                [ Attr.class "article-interactions" ]
-                [ Html.text <| a.date ++ " " ]
-            , Tags.view a.tags
-            ]
+        , case a.description of
+            Just desc ->
+                Html.p [] [ Html.text desc ]
+
+            Nothing ->
+                Html.text ""
         ]
