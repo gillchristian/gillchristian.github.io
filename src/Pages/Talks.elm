@@ -127,7 +127,15 @@ talk t =
 
 talks : List Talk
 talks =
-    [ { title = "A day in the life of a Software Engineer"
+    [ { title = "Maps of the Codebase"
+      , event = "AmsterdamJS Meetup"
+      , eventUrl = "https://www.meetup.com/amsterdamjs/events/298560630"
+      , description = "Inspired by Peter Turchi's book, I compare cartography to technical writing, showing how effective writing guides developers through a codebase like a map."
+      , date = "March 2024"
+      , links = []
+      , type_ = Meetup
+      }
+    , { title = "A day in the life of a Software Engineer"
       , event = "Software Engineering Summit 2022 ELU"
       , eventUrl = "https://techmindssummit.com/"
       , description = "What's like to work as a software engineer? In a nutshell you'll write code to solve problems and collaborate on meetings. Of course it's more complicated than that."

@@ -15,8 +15,7 @@ header : Page -> Html msg
 header current =
     Html.div
       [ Attr.class "header" ]
-      [ link Stream current "/stream" "Stream"
-      , link Articles current "/articles" "Writing"
+      [ link Articles current "/articles" "Writing"
       , link Projects current "/projects" "Projects"
       , link Talks current "/talks" "Talks"
       , link About current "/about" "About"

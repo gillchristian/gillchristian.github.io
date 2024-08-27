@@ -18,8 +18,6 @@ page =
                 [ from
                 , Html.br [] []
                 , stream
-                , Html.br [] []
-                , dotfiles
                 , Html.h2 [] [ Html.text "So far I worked at ..." ]
                 ]
                     ++ List.map job jobs
@@ -57,20 +55,9 @@ stream : Html msg
 stream =
     Html.p
         []
-        [ Html.text "I code in Rust, Haskell, PureScript, Elm, and Reason "
-        , Html.a
-            [ Attr.href "/stream" ]
-            [ Html.text "when some are watching" ]
-        , Html.text ", looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. "
-        , Html.text "If you have something to share about that I'd be happy to hear."
-        ]
-
-
-dotfiles : Html msg
-dotfiles =
-    Html.p
-        []
-        [ Html.text "Also, check my "
+        [ Html.text "I code in Rust, Elm, Haskell, TypeScript, and anything else. "
+        , Html.text "Looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream."
+        ,  Html.text "Also, check my "
         , Html.a
             [ Attr.href "https://github.com/gillchristian/dotfiles"
             , Attr.target "_blank"
@@ -79,6 +66,8 @@ dotfiles =
             [ Html.text "dotfiles" ]
         , Html.text ", every developer should have their dotfiles :)"
         ]
+
+
 
 
 job : Job -> Html msg
@@ -129,7 +118,7 @@ jobs =
     [ { company = "Pinata"
       , link = "https://gopinata.com"
       , roles = Just [ "Senior Software Engineer" ]
-      , description = "I help business to achieve data-driven task management"
+      , description = "I help business achieve data-driven task management"
       , techs =
             [ "Rust"
             , "Elm"
