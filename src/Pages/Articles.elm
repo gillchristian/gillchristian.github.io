@@ -55,8 +55,7 @@ quote =
         []
         [ Html.p
             []
-            [ Html.text "I have only one method that I recommended extensively - it's called think before you write."
-            , Html.text "Take historical note of the textile and steel industries:"
+            [ Html.text "I have only one method that I recommended extensively—it's called think before you write."
             ]
         , Html.p
             []
