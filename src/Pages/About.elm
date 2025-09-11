@@ -17,7 +17,7 @@ page =
             , body =
                 [ from
                 , Html.br [] []
-                , stream
+                , about
                 , Html.h2 [] [ Html.text "So far I worked at ..." ]
                 ]
                     ++ List.map job jobs
@@ -38,11 +38,11 @@ from =
             [ Html.text "Entre Rios, Argentina" ]
         , Html.text " now living in "
         , Html.a
-            [ Attr.href "https://en.wikipedia.org/wiki/Winschoten"
+            [ Attr.href "https://en.wikipedia.org/wiki/Tarragona"
             , Attr.target "_blank"
             , Attr.rel "noopener noreferrer"
             ]
-            [ Html.text "Winschoten, The Netherlands" ]
+            [ Html.text "Tarragona, Spain" ]
         , Html.text "."
         ]
 
@@ -51,12 +51,18 @@ from =
 -- TODO: this should be about Digital Gardens?
 
 
-stream : Html msg
-stream =
+about : Html msg
+about =
     Html.p
         []
-        [ Html.text "I code mostly in Rust, Elm, Haskell, and TypeScript. "
-        , Html.text "Looking for ways to bring ideas and patterns from strongly typed functional programming into the mainstream. "
+        [ Html.text "See what I'm up to "
+        , Html.a
+            [ Attr.href "https://garden.gillchristian.xyz/Now"
+            , Attr.target "_blank"
+            , Attr.rel "noopener noreferrer"
+            ]
+            [ Html.text "now" ]
+        , Html.text ". "
         , Html.text "Also, check my "
         , Html.a
             [ Attr.href "https://github.com/gillchristian/dotfiles"

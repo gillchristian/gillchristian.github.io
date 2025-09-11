@@ -77,6 +77,16 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.home-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, serif;
 }
 
 .home-avatar {
@@ -89,6 +99,7 @@ a:hover {
 .home-logo {
   display: flex;
   align-items: center;
+  line-height: 1;
 }
 
 .home-header {

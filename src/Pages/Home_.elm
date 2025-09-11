@@ -18,6 +18,7 @@ page =
                 [ Html.div [ Attr.class "home-avatar" ] []
                 , Html.h1 [ Attr.class "home-title" ] [ Html.text "Christian Gill" ]
                 ]
+            , Html.h2 [ Attr.class "home-subtitle" ] [ Html.text "trust the process" ]
             , Html.div
                 [ Attr.class "home-header" ]
                 [ header Home ]
